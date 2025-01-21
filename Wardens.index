@@ -17,7 +17,7 @@
 		<file name="Custom-Weapons.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Weapons.xml" />
 		<file name="Custom-Armour.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Armour.xml" />
 		<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
-		<file name="Custom-Items-Wondrous.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items-Wondrous.xml" />
+		<file name="Custom-Items-wondrous.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items-wondrous.xml" />
 
 	</files>
 </index>
