@@ -25,7 +25,7 @@
 			<set name="keywords">Faction, token, Rockseeker</set>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">150</set>
-			<set name="weight" lb="5">5 lb.</set>
+			<set name="weight" lb="0">5 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">false</set>
 			<set name="rarity">Rare</set>
