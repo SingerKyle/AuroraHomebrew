@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.3">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/source.xml" />
+		</update>
+	</info>
+	<element name="Wardens of Faerûn" type="Homebrew" source="Core" id="ID_WOF_SOURCE_CUSTOM_ITEMS">
+		<description>
+			<p><strong>The following are spells, items and other such things for my homebrew campaign. The Wardens of Faerûn.</strong></p>
+		</description>
+		<setters>
+			<set name="abbreviation">wof</set>
+			<set name="url">https://github.com/SingerKyle/AuroraHomebrew</set>
+			<set name="author" abbreviation="Eon" url="https://github.com/SingerKyle/AuroraHomebrew">Eonkyle</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20140930</set>
+		</setters>
+	</element>
+</elements>
