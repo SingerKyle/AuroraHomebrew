@@ -12,7 +12,13 @@
 	</info>
 	<files>
 	
-	    <file name="Content.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens/Content.index" />
+	    <file name="source.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens/source.xml" />
+        <!-- 2025 -->
+        <file name="Custom-Weapons.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens/Custom-Weapons.xml" />
+        <file name="Custom-Staffs.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens/Custom-Staffs.xml" />
+        <file name="Custom-Armour.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens/Custom-Armour.xml" />
+        <file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens/Custom-Spells.xml" />
+        <file name="Custom-Items-wondrous.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens/Custom-Items-Wondrous.xml" />
 	
 	</files>
 </index>
