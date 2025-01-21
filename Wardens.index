@@ -5,14 +5,12 @@
 		<description>
 		The following are spells, items and other such things for my homebrew campaign. The Wardens of Faerûn.
 		</description>
-		<author url=https://github.com/SingerKyle/AuroraHomebrew">Eonkyle< />
+		<author url=https://github.com/SingerKyle/AuroraHomebrew">Eonkyle</author>
 		<update version="0.1">
 			<file name="Wardens.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens.index" />
 		</update>
 	</info>
 	<files>
-		<file name="Wardens.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens.index" />
-				
 		<!-- 2025 -->
 		<file name="Custom-Items.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items.xml" />
 		<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
