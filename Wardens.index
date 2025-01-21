@@ -11,7 +11,7 @@
 		</update>
 	</info>
 	<files>
-	    <file name="source.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/source.xml" />
+	    <file name="Source.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Source.xml" />
 	
 		<!-- 2025 -->
 		<file name="Custom-Weapons.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Weapons.xml" />
