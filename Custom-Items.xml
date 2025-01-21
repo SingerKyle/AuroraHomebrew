@@ -69,5 +69,25 @@
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
 		</rules>
 	</element>
+
+	<element name="Dent's Greatsword" type="Magic Item" source="Custom" id="ID_CUSTOM_DENT_GREATSWORD">
+		<description>
+			<p>
+				This <em>Greatsword</em> is a magical sword blessed by dumb barbarians.
+			</p>
+			<p class="indent">You have a +1 bonus to being gay.</p>
+			<p class="indent">As a reaction when a creature within 5 feet of you takes damage, you can cry as a free action.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="armor">Greatsword</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+		</rules>
+	</element>
 	
 </elements>
