@@ -32,7 +32,7 @@
 			<set name="weapon">Quarterstaff</set>
 			<set name="type">Staff</set>
 			<set name="attunement">false</set>
-			<set name="rarity">Rare</set>
+			<set name="rarity">Very Rare</set>
 		</setters>
 	</element>
 	
