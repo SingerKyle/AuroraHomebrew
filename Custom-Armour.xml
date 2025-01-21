@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<!--<info>
+		<name>Armours</name>
+		<description></description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.8">
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
+		</update>
+	</info>-->
+
+	<element name="Radiant-Infused Shield" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_RADIANT_INFUSED_SHIELD">
+		<description>
+			<p>
+				The <em>Radiant-Infused Shield</em> is a magical shield blessed by celestial beings. The shield's surface glows faintly with divine light, granting protection and healing properties to its wielder.
+			</p>
+			<p class="indent">You have a +1 bonus to AC while wielding this shield. In addition, the shield has 3 charges and regains 1d3 expended charges daily at dawn.</p>
+			<p class="indent">As a reaction when a creature within 5 feet of you takes damage, you can expend 1 charge to grant that creature 2d6 temporary hit points. These hit points last for 1 minute.</p>
+			<p class="indent">
+				While holding the shield, you can use an action to cast <i>shield of faith</i> (save DC 15) or <i>cure wounds</i> at 1st level. Once either spell is cast, it cannot be cast again from the shield until the next dawn.
+			</p>
+			<p class="indent">
+				<i>
+					<b>Personality.</b>
+				</i> The shield embodies a strong will to protect the innocent and defend against evil. It urges its wielder to stand as a guardian, protecting others and showing mercy to the helpless.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="armor">Shield</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+		</rules>
+	</element>
+	
+</elements>
