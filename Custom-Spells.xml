@@ -28,4 +28,31 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+	<element name="Malazar's Dome of Protection" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_ARCANE_SEAL">
+		<supports>Wizard, Sorcerer</supports>
+		<description>
+			<p>
+				You create an immobile dome of protective force with a radius of 10 feet around and above you and remains stationary for the duration. The dome has 30 hit points. You choose any number of creatures when you cast this spell so they can move through it. 
+				All other creatures are barred from passing through it. When a creature outside of the dome targets another creature inside, they target the dome instead. Whenever a creature inside the dome takes damage from another creature from outside, the dome takes the damage instead. 
+				If this damage reduces the dome to 0 hit points, the creature takes any remaining damage and the dome is destroyed. The dome only takes damage once from spells with an area of effect. The dome disappears after 1 minute passes or it reaches 0 HP.
+			</p>
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the Hit points of the dome increases by 10 for each slot level above 3rd.</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute.</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A small glass marble.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 </elements>
