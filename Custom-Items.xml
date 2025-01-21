@@ -8,7 +8,7 @@
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
 		</update>
 	</info>
-	<element name="Shadowsteel Sword" type="Magic Item" source="Custom" id="ID_CUSTOM_SHADOWSTEEL_SWORD">
+	<element name="Shadowsteel Sword" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_SHADOWSTEEL_SWORD">
 		<description>
 			<p>
 				Forged in the heart of the Umbral Forge, the <em>Shadowsteel Sword</em> is a longsword infused with dark energies that draw strength from shadows. The blade absorbs ambient light, dimming its surroundings when drawn.
@@ -41,7 +41,7 @@
 		</setters>
 	</element>
 
-	<element name="Radiant-Infused Shield" type="Magic Item" source="Custom" id="ID_CUSTOM_RADIANT_INFUSED_SHIELD">
+	<element name="Radiant-Infused Shield" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_RADIANT_INFUSED_SHIELD">
 		<description>
 			<p>
 				The <em>Radiant-Infused Shield</em> is a magical shield blessed by celestial beings. The shield's surface glows faintly with divine light, granting protection and healing properties to its wielder.
@@ -70,7 +70,7 @@
 		</rules>
 	</element>
 
-	<element name="Dent's Greatsword" type="Magic Item" source="Custom" id="ID_CUSTOM_DENT_SWORD">
+	<element name="Dent's Greatsword" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_DENT_SWORD">
 		<description>
 			<p>
 				This <em>Greatsword</em> is a magical sword blessed by dumb barbarians.
@@ -81,6 +81,7 @@
 			<p class="indent">As a reaction when a creature within 5 feet of you takes damage, you can cry as a free action.</p>
 		</description>
 		<setters>
+			<set name="keywords">greatsword</set>
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="greatsword">Weapon</set>
 			<set name="rarity">Very Rare</set>
