@@ -80,14 +80,12 @@
 		</description>
 		<setters>
 			<set name="category">Magic Weapons</set>
+			<set name="type" addition="greatsword">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
-			<set name="armor">Greatsword</set>
+			<set name="weapon">Greatsword</set>
 		</setters>
-		<rules>
-			<stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
-		</rules>
 	</element>
 	
 </elements>
