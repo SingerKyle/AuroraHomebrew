@@ -14,9 +14,7 @@
 			<set name="abbreviation">WOF</set>
 			<set name="url">https://github.com/SingerKyle/AuroraHomebrew</set>
 			<set name="author" abbreviation="Eon" url="https://github.com/SingerKyle/AuroraHomebrew">Eonkyle</set>
-			<set name="official">false</set>
-			<set name="core">false</set>
-			<set name="release">20250930</set>
+			<set name="homebrew">true</set>
 		</setters>
 	</element>
 </elements>
