@@ -5,7 +5,7 @@
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
-	<element name="Void Siphon" type="Spell" source="Wardens of Faerûn" id="ID_AW_OOTD_SPELL_ANIMAL_POLYMORPH">
+	<element name="Void Siphon" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_VOID_SYPHON">
 		<supports>Wizard, Warlock, Artificer</supports>
 		<description>
 			<p>You summon a small void rift in your palm, siphoning energy from a magical source or creature. The target must make a Constitution saving throw or lose a spell slot (chosen at random). You regain hit points equal to twice the slot’s level..</p>
