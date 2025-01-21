@@ -11,6 +11,8 @@
 		</update>
 	</info>
 	<files>
+	    <file name="source.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/source.xml" />
+	
 		<!-- 2025 -->
 		<file name="Custom-Items.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items.xml" />
 		<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
