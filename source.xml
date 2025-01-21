@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.3">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/source.xml" />
 		</update>
 	</info>
 	<element name="Wardens of Faerûn" type="Homebrew" source="Core" id="ID_WOF_SOURCE_CUSTOM_ITEMS">
