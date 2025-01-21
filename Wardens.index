@@ -7,11 +7,11 @@
 		</description>
 		<author url="Eonkyle</author>
 		<update version="0.1">
-			<file name="user.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/user.index" />
+			<file name="Wardens.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/user.index" />
 		</update>
 	</info>
 	<files>
-		<file name="planeshift.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/user.index" />
+		<file name="Wardens.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/user.index" />
 				
 		<!-- 2025 -->
 		<file name="Custom-Items.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items.xml" />
