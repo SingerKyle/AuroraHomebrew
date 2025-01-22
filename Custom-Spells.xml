@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -15,7 +15,7 @@
 	<element name="Grasp of Frost" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_FROSTGRASP">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
-			<p>A cantrip dating back to the Netherese Empire. Records indicate Archmage Malazar created a frost cantrip so powerful it could freeze the very bones of enemies.</p>
+			<p>A cantrip dating back to the Netherese Empire. Records indicate <em>Archmage Malazar</em> created a frost cantrip so powerful it could freeze the very bones of enemies.</p>
 			
 			<p>You extend your hand towards an enemy engulfing them in shards of ice, dealing 1d8 cold damage and forcing it to make a Strength saving throw or become restrained by frost until the end of your next turn.</p>
 			
@@ -40,7 +40,7 @@
 	<element name="Jolt" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_JOLT">
 		<supports>Cleric, Artificer, Wizard</supports>
 		<description>
-			<p>A cantrip dating back to the Netherese Empire. Records indicate Archmage Malazar created a cantrip capable of assisting the healers of Netheril.</p>
+			<p>A cantrip dating back to the Netherese Empire. Records indicate <em>Archmage Malazar</em> created a cantrip capable of assisting the healers of Netheril.</p>
 			
 			<p>You cause lightning to crackle at your fingertips and target a creature within range. If the target is unconscious and dying, you grant them advantage on their next death saving throw. If the target is hostile to you,
 			they must make a dexterity saving throw or take 1d6 lightning damage.</p>
@@ -68,9 +68,27 @@
 	                                                           LEVEL 1
 	
 	-->
-
-
-
+	
+	<element name="Magic Tool" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_MAGIC_TOOL">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<p>Touch a non-magical tool. It becomes magical with a +1 to ability check rolls until the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">Tool</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation </set>
+			<set name="time">1 action</set>
+			<set name="duration">Up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 	<!--
 	
@@ -78,6 +96,65 @@
 	
 	-->
 
+	<element name="Malazar's Regenerating Ward" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_REGEN_WARD">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<p>
+				Documented as being created during the Apprentice Malazar during the Crown Wars, 
+				this spell creates a regenerating abjurative force field around a single willing creature you can see within range. 
+				For the duration, at the start of each of its turns, 
+				it gains a number of temporary hit points equal to spell cast level plus your spellcasting ability modifier.
+			</p>
+			
+			<p>These temporary hit points disappear when the spell ends.</p>
+
+			<p class = "indent">
+				<strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+			</p>
+			
+		</description>
+		<setters>
+			<set name="keywords">Ward</set>
+			<set name="level">2</set>
+			<set name="school">Abjuration </set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute (concentration)</set>
+			<set name="range">30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Phantasmal Workshop" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_MAGIC_TOOL">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<p>This spell creates a temporary quasi-real workshop in a 10’x10’ area. Choose a type of artisan’s tools, a workshop containing those tools and its associated gear appears.</p>
+			<p>For example, choosing Smith’s Tools would cause quasi-real hammers, tongs, pliers to appear along with an anvil, forge, fuel and bellows. 
+				A person who is proficient with the chosen tools can use this phantom workshop as effectively as a real workshop.</p>
+			
+			<p class = "indent">
+				Any of the equipment or materials created by the spell vanishes in a puff of smoke if it is carried outside the area or when the spell ends. 
+				Therefore, it’s necessary to provide real raw materials to create anything that lasts after the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords">Tool</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation </set>
+			<set name="time">1 action</set>
+			<set name="duration">Up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A small piece of rare metal worth 25 gp. Used in the process</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 
 
 
@@ -91,7 +168,8 @@
 		<supports>Wizard, Sorcerer</supports>
 		<description>
 			<p>
-				An icy streak flashes from your pointing finger to a point you choose within range then blossoms with a crystalline crackle into an explosion of ice. 
+				Created by <em>Upper Arcanist Malazar</em> to counteract fireball spells during the Crown Wars.
+				Upon casting, an icy streak flashes from your pointing finger to a point you choose within range then blossoms with a crystalline crackle into an explosion of ice. 
 				Each creature in a 20-foot radius sphere centered on that point must make a Dexterity saving throw. 
 				A target takes 8d6 cold damage on a failed save, or half as much damage on a successful one.
 			</p>
@@ -176,6 +254,7 @@
 	                                                           LEVEL 4
 	
 	-->
+	
 	
 	
 
