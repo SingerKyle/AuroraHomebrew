@@ -34,5 +34,30 @@
 		</setters>
 	</element>
 
+	<element name="Used Bag of Holding" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_WHIZZ_HOLDING_BAG">
+		<description>
+			<p>This small, weathered bag of holding was previously enchanted by a great magic user. It was broken, seemingly by time and once again reforged by Whizz-Bang Rockseeker inside a lost Netherese crypt.</p>
 
+			<p class="indent">The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.</p>
+			
+			<p class="indent">If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. 
+				If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. 
+				Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.</p>
+
+			<p class="indent">Placing a bag of holding inside an extradimensional space created by a handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. 
+				The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. 
+				The gate then closes. The gate is one-way only and can't be reopened.</p>
+			
+		</description>
+		<setters>
+			<set name="keywords">Netherese, Bag of Holding, Rockseeker</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="15">15 lb</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	
 </elements>
