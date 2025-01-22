@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.13">
+		<update version="0.0.15">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -11,31 +11,6 @@
 	                                                           CANTRIPS
 	
 	-->
-	
-	<element name="Grasp of Frost" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_FROSTGRASP">
-		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
-		<description>
-			<p>A cantrip dating back to the Netherese Empire. Records indicate <em>Archmage Malazar</em> created a frost cantrip so powerful it could freeze the very bones of enemies.</p>
-			
-			<p>You extend your hand towards an enemy engulfing them in shards of ice, dealing 1d8 cold damage and forcing it to make a Strength saving throw or become restrained by frost until the end of your next turn.</p>
-			
-			<p class = "indent"><strong>At Higher Levels.</strong>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
-		</description>
-		<setters>
-			<set name="keywords">frost</set>
-			<set name="level">0</set>
-			<set name="school">Evocation</set>
-			<set name="time">1 action</set>
-			<set name="duration">1 round</set>
-			<set name="range">Touch</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent" />
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
 
 	<element name="Jolt" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_JOLT">
 		<supports>Cleric, Artificer, Wizard</supports>
@@ -63,6 +38,80 @@
 		</setters>
 	</element>
 
+	<element name="Polar Ray" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_POLARRAY">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>A cantrip dating back to the Netherese Empire. Iceweaver records state one, <em>Archmage Malazar</em> created this cantrip as an apprentice to Archmage Karsus.</p>
+			
+			<p>
+				glaciate a mass of ice crystals around yourself and launch a beam of boreal air at an enemy or object within range.
+			</p>
+
+			<p>
+				Make a ranged spell attack, on a hit the target takes 1d6 cold damage plus an amount equal to your spellcasting ability modifier (20 charisma would be a +5 damage). 
+				This spell will instantly extinguish campfires or freeze a gallon of water.
+			</p>
+
+			<p class="indent">
+				<strong>At Higher Levels.</strong> The damage increases by an amount equal to your spellcasting ability modifier at 5th level (1d6 + 2 times modifier), 
+				11th level (1d6 + 3 times modifier), 
+				and 17th level (1d6 + 4 times modifier).
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">cold</set>
+			<set name="level">Cantrip</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">65 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ice Spear" type="Spell" source="Custom" id="ID_AH_WOF_SPELL_ICESPEAR">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>
+				You conjure an icicle from the moisture in the air and hurl it at a target.
+			</p>
+
+			<p>
+				You create a long shard of ice and immediately hurl it in a straight line up to 60 feet in a direction you choose before evaporating, stopping early if it impacts against a solid surface. 
+				If the object would strike a creature, that creature must make a Dexterity saving throw. 
+				On a failed save, the shard of ice strikes the target and shatters, dealing 1d8 piercing damage.
+			</p>
+
+			<p class="indent">
+				<strong>At Higher Levels.</strong> The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+			</p>
+
+			<p class="indent">
+				<strong>Mastery: Frozen Shard Barrage:</strong> When you cast Ice Spear, you can expend additional energy to launch multiple shards of ice. As part of the casting, you can create two additional shards, 
+				which can be thrown at separate targets within 60 feet of the original line. 
+				Each shard deals 1d8 piercing damage and requires a separate Dexterity saving throw for each target.
+			</p>
+			
+		</description>
+		<setters>
+			<set name="keywords">cold, piercing</set>
+			<set name="level">Cantrip</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (60 ft line)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 	<!--
 	
 	                                                           LEVEL 1
@@ -129,7 +178,7 @@
 		</setters>
 	</element>
 
-	<element name="Phantasmal Workshop" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_MAGIC_TOOL">
+	<element name="Phantasmal Workshop" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_WORKSHOP">
 		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>This spell creates a temporary quasi-real workshop in a 10’x10’ area. Choose a type of artisan’s tools, a workshop containing those tools and its associated gear appears.</p>
@@ -142,7 +191,7 @@
 		</description>
 		<setters>
 			<set name="keywords">Tool</set>
-			<set name="level">1</set>
+			<set name="level">2</set>
 			<set name="school">Transmutation </set>
 			<set name="time">1 action</set>
 			<set name="duration">Up to 1 hour</set>
@@ -163,6 +212,79 @@
 	                                                           LEVEL 3
 	
 	-->
+
+	<element name="Artic Aegis" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_ARTICAEGIS">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>
+				As a reaction to being attacked, you may use your reaction to summon a barrier of shimmering ice that absorbs the damage you would have taken. 
+				The icy shield has 30 hit points and lasts until the end of your next turn. The shield is vulnerable to fire damage and immune to cold damage.</p>
+
+			<p>
+				On your turn, if the shield has remaining hit points, you can transmute it into an icicle and make a ranged spell attack against a creature within 60 feet. 
+				On a hit, the target takes 1d8 cold damage, plus the remaining hit points of the shield. Alternatively, you can convert the shield back into the material component.
+			</p>
+
+			<p class="indent">
+				<strong>At Higher Levels.</strong> When cast using a spell slot of 4th level or higher, the shield’s hit points increase by 10 for each slot level above 3rd. 
+				alternatively you may upcast to use your reaction to target an ally within 30 ft that is attacked, however the shield may only have the base HP value.
+			</p>
+
+			<p class="indent">
+				<strong>Mastery: Cryomatic Warding:</strong> Great Cryomancers can perfect the shield sculpting process. When struck by cold damage, the shield gains additional hit points equal to half the cold damage that would have been dealt.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">shield, cold</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 reaction</set>
+			<set name="duration">1 round</set>
+			<set name="range">self, or an ally within 30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of ice carved to resemble a shield, consumed in the casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Snap Freeze" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_SNAPFREEZE">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<p>A spell dating back to the Netherese Empire. Records indicate <em>Archmage Malazar</em> created a frost spell so powerful it could freeze the very bones of enemies.</p>
+			
+			<p>
+				With a click of your fingers you summon a dreadful cold upon a target creature within range.
+			</p>
+
+			<p>
+				That creature must make a constitution saving throw against your spell save DC,
+				on a failed save target creature takes 2d8 cold damage,
+				has their speed halved, and becomes vulnerable to piercing, slashing and bludgeoning damage for the duration of the spell.
+				On a successful save the target takes half damage and experiences no other effects. Creatures who fail there save may repeat it at the start of each of their turns.
+			</p>
+
+			<p class="indent">
+				Creatures with resistance to cold damage have advantage on the saving throw. 
+				Creatures with immunity to cold automatically succeed on the save.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">cold, vulnerability</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 	<element name="Winter Blast" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_WINTER_BLAST">
 		<supports>Wizard, Sorcerer</supports>
@@ -243,7 +365,7 @@
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">A small glass marble.</set>
+			<set name="materialComponent">A small glass marble worth 20 gp, used in the spell casting.</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
