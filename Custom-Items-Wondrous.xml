@@ -99,9 +99,27 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 		</setters>
-		<rules>
-			
-		</rules>
+	</element>
+
+	<element name="Gloves of the Manticore" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_MANTI_GLOVES">
+		<description>
+			<p>
+				These leather gloves are embedded with sharp manticore claws extending over the knuckles.
+				The claws have been polished and enchanted to be razor sharp, providing extra damage with unarmed strikes.
+			</p>
+			<p class = "indent"><em>Claws of the Beast:</em> The gauntlets while attuned, allow the wearer to make unarmed attacks with the manticore claws, dealing 1D6 + strength slashing damage.
+				If your unarmed strikes are already 1D6, your strikes now deal 1D8 + strength. </p>
+		</description>
+		<setters>
+			<set name="keywords">Gauntlet, monk, unarmed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="15">20 lb.</set>
+			<set name="slot">arms</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
 	</element>
 	
 </elements>
