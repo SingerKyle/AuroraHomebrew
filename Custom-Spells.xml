@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.17">
+		<update version="0.0.19">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 			<p>You cause lightning to crackle at your fingertips and target a creature within range. If the target is unconscious and dying, you grant them advantage on their next death saving throw. If the target is hostile to you,
 			they must make a dexterity saving throw or take 1d6 lightning damage.</p>
 			
-			<p class = "indent"><strong>At Higher Levels.</strong>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			<p><strong>At Higher Levels.</strong>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
 		</description>
 		<setters>
 			<set name="keywords">frost</set>
@@ -41,7 +41,7 @@
 	<element name="Polar Ray" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_POLARRAY">
 		<supports>Sorcerer, Wizard</supports>
 		<description>
-			<p>A cantrip dating back to the Netherese Empire. Iceweaver records state one, <em>Archmage Malazar</em> created this cantrip as an apprentice to Archmage Karsus.</p>
+			<p>A cantrip dating back to the Netherese Empire. Iceweaver records state one, <em>Malazar</em> created this cantrip as an apprentice to Archmage Karsus.</p>
 			
 			<p>
 				glaciate a mass of ice crystals around yourself and launch a beam of boreal air at an enemy or object within range.
@@ -52,7 +52,7 @@
 				This spell will instantly extinguish campfires or freeze a gallon of water.
 			</p>
 
-			<p class="indent">
+			<p>
 				<strong>At Higher Levels.</strong> The damage increases by an amount equal to your spellcasting ability modifier at 5th level (1d6 + 2 times modifier), 
 				11th level (1d6 + 3 times modifier), 
 				and 17th level (1d6 + 4 times modifier).
@@ -79,18 +79,18 @@
 			<p>
 				You conjure an icicle from the moisture in the air and hurl it at a target.
 			</p>
-
+			
 			<p>
 				You create a long shard of ice and immediately hurl it in a straight line up to 60 feet in a direction you choose before evaporating, stopping early if it impacts against a solid surface. 
 				If the object would strike a creature, that creature must make a Dexterity saving throw. 
 				On a failed save, the shard of ice strikes the target and shatters, dealing 1d8 piercing damage.
 			</p>
-
-			<p class="indent">
+			<break/>
+			<p>
 				<strong>At Higher Levels.</strong> The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 			</p>
-
-			<p class="indent">
+			<break/>
+			<p>
 				<strong>Mastery: Frozen Shard Barrage:</strong> When you cast Ice Spear, you can expend additional energy to launch multiple shards of ice. As part of the casting, you can create two additional shards, 
 				which can be thrown at separate targets within 60 feet of the original line. 
 				Each shard deals 1d8 piercing damage and requires a separate Dexterity saving throw for each target.
@@ -156,7 +156,7 @@
 			
 			<p>These temporary hit points disappear when the spell ends.</p>
 
-			<p class = "indent">
+			<p>
 				<strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
 			</p>
 			
@@ -180,13 +180,19 @@
 	<element name="Phantasmal Workshop" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_WORKSHOP">
 		<supports>Artificer, Wizard</supports>
 		<description>
-			<p>This spell creates a temporary quasi-real workshop in a 10’x10’ area. Choose a type of artisan’s tools, a workshop containing those tools and its associated gear appears.</p>
-			<p>For example, choosing Smith’s Tools would cause quasi-real hammers, tongs, pliers to appear along with an anvil, forge, fuel and bellows. 
-				A person who is proficient with the chosen tools can use this phantom workshop as effectively as a real workshop.</p>
+			<p>
+				This spell creates a temporary quasi-real workshop in a 10’x10’ area. Choose a type of artisan’s tools, a workshop containing those tools and its associated gear appears.
+			</p>
 			
-			<p class = "indent">
+			<p>
+				For example, choosing Smith’s Tools would cause quasi-real hammers, tongs, pliers to appear along with an anvil, forge, fuel and bellows. 
+				A person who is proficient with the chosen tools can use this phantom workshop as effectively as a real workshop.
+			</p>
+			
+			<p>
 				Any of the equipment or materials created by the spell vanishes in a puff of smoke if it is carried outside the area or when the spell ends. 
-				Therefore, it’s necessary to provide real raw materials to create anything that lasts after the spell ends.</p>
+				Therefore, it’s necessary to provide real raw materials to create anything that lasts after the spell ends.
+			</p>
 		</description>
 		<setters>
 			<set name="keywords">Tool</set>
@@ -225,12 +231,12 @@
 				On a hit, the target takes 1d8 cold damage, plus the remaining hit points of the shield. Alternatively, you can convert the shield back into the material component.
 			</p>
 			<br/>
-			<p class="indent">
+			<p>
 				<strong>At Higher Levels.</strong> When cast using a spell slot of 4th level or higher, the shield’s hit points increase by 10 for each slot level above 3rd. 
 				alternatively you may upcast to use your reaction to target an ally within 30 ft that is attacked, however the shield may only have the base HP value.
 			</p>
 			<br/>
-			<p class="indent">
+			<p>
 				<strong>Mastery: Cryomatic Warding:</strong> Great Cryomancers can perfect the shield sculpting process. When struck by cold damage, the shield gains additional hit points equal to half the cold damage that would have been dealt.
 			</p>
 		</description>
@@ -265,10 +271,14 @@
 				has their speed halved, and becomes vulnerable to piercing, slashing and bludgeoning damage for the duration of the spell.
 				On a successful save the target takes half damage and experiences no other effects. Creatures who fail there save may repeat it at the start of each of their turns.
 			</p>
-
-			<p class="indent">
+			<break/>
+			<p>
 				Creatures with resistance to cold damage have advantage on the saving throw. 
 				Creatures with immunity to cold automatically succeed on the save.
+			</p>
+			
+			<p><strong>Mastery: Entrapping Ice:</strong> The target is restrained until they succeed on a Constitution saving throw at the end of their turn. 
+				On a successful save, the creature is no longer restrained but remains affected by the spell’s cold and vulnerability effects.
 			</p>
 		</description>
 		<setters>
