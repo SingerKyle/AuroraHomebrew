@@ -92,5 +92,24 @@
 			<set name="charges">3</set>
 		</setters>
 	</element>
+
+	<element name="Alchemists' Reprise" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_ALCHEMIST_SWORD">
+		<description>
+			<p>
+				A thin opaque bottle, meant for use when the carrier becomes unarmed. Upon activation, the blue sludge in the vial extends out and becomes a one handed blade, with the vial itself as the handle. 
+				Deals 2d8 in poison damage, and evaporates after 5 turns.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Sword, Alchemy</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Weapon">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">false</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</set>
+			<set name="proficiency">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</set>
+		</setters>
+	</element>
 	
 </elements>
