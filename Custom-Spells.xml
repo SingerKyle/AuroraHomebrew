@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.16">
+		<update version="0.0.17">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -217,18 +217,19 @@
 		<description>
 			<p>
 				As a reaction to being attacked, you may use your reaction to summon a barrier of shimmering ice that absorbs the damage you would have taken. 
-				The icy shield has 30 hit points and lasts until the end of your next turn. The shield is vulnerable to fire damage and immune to cold damage.</p>
-
+				The icy shield has 30 hit points and lasts until the end of your next turn. The shield is vulnerable to fire damage and immune to cold damage.
+			</p>
+			<br/>
 			<p>
 				On your turn, if the shield has remaining hit points, you can use a bonus action to transmute it into an icicle and make a ranged spell attack against a creature within 60 feet. 
 				On a hit, the target takes 1d8 cold damage, plus the remaining hit points of the shield. Alternatively, you can convert the shield back into the material component.
 			</p>
-
+			<br/>
 			<p class="indent">
 				<strong>At Higher Levels.</strong> When cast using a spell slot of 4th level or higher, the shield’s hit points increase by 10 for each slot level above 3rd. 
 				alternatively you may upcast to use your reaction to target an ally within 30 ft that is attacked, however the shield may only have the base HP value.
 			</p>
-
+			<br/>
 			<p class="indent">
 				<strong>Mastery: Cryomatic Warding:</strong> Great Cryomancers can perfect the shield sculpting process. When struck by cold damage, the shield gains additional hit points equal to half the cold damage that would have been dealt.
 			</p>
@@ -239,7 +240,7 @@
 			<set name="school">Conjuration</set>
 			<set name="time">1 reaction</set>
 			<set name="duration">1 round</set>
-			<set name="range">self, or an ally within 30 ft</set>
+			<set name="range">self</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
