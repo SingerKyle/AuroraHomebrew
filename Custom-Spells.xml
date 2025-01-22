@@ -1,13 +1,119 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.10">
+		<update version="0.0.11">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
+
+	<!--
+	
+	                                                           CANTRIPS
+	
+	-->
+	
+	<element name="Grasp of Frost" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_FROSTGRASP">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>A cantrip dating back to the Netherese Empire. Records indicate Archmage Malazar created a frost cantrip so powerful it could freeze the very bones of enemies.</p>
+			<p>You extend your hand towards an enemy engulfing them in shards of ice, dealing 1d8 cold damage and forcing it to make a Strength saving throw or become restrained by frost until the end of your next turn.</p>
+			<p class = "indent">The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">frost</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Jolt" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_JOLT">
+		<supports>Cleric, Artificer, Wizard</supports>
+		<description>
+			<p>A cantrip dating back to the Netherese Empire. Records indicate Archmage Malazar created a cantrip capable of assisting the healers of Netheril.</p>
+			<p>You cause lightning to crackle at your fingertips and target a creature within range. If the target is unconscious and dying, you grant them advantage on their next death saving throw. If the target is hostile to you,
+			they must make a dexterity saving throw or take 1d6 lightning damage.</p>
+			<p class = "indent">The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">frost</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!--
+	
+	                                                           LEVEL 1
+	
+	-->
+
+
+
+
+	<!--
+	
+	                                                           LEVEL 2
+	
+	-->
+
+
+
+
+	<!--
+	
+	                                                           LEVEL 3
+	
+	-->
+
+	<element name="Winter Blast" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_WINTER_BLAST">
+		<supports>Wizard, Sorcerer</supports>
+		<description>
+			<p>
+				An icy streak flashes from your pointing finger to a point you choose within range then blossoms with a crystalline crackle into an explosion of ice. 
+				Each creature in a 20-foot radius sphere centered on that point must make a Dexterity saving throw. 
+				A target takes 8d6 cold damage on a failed save, or half as much damage on a successful one.
+			</p>
+			
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the cold damage increases by 1d6 for every one level above 3rd.</p>
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">120 ft</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a snowflake</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 	<element name="Void Siphon" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_VOID_SYPHON">
 		<supports>Wizard, Warlock, Artificer</supports>
 		<description>
+			<p>A spell few would dare to learn, outlawed even to mages of Thay. Dating back to the Netherese Empire. A spell created by the late Archmage Malazar </p>
 			<p>You summon a small void rift in your palm, siphoning energy from a magical source or creature. The target must make a Constitution saving throw or lose a spell slot (chosen at random). You regain hit points equal to twice the slot’s level..</p>
 			<!--<p class="indent">The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast of CR 1 or less that does not have a fly speed. While in this new form, the target is charmed by you and views you as a trusted ally. The target can understand simple commands such as “attack” or “stay.” The charm affects creatures that are immune to charm in their normal form. The charm ends immediately when the target reverts to its normal form.</p>
 			<p class="indent">The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech. The creature's gear melds into its new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment.</p>
@@ -54,5 +160,13 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+
+	<!--
+	
+	                                                           LEVEL 4
+	
+	-->
+	
+	
 
 </elements>
