@@ -15,7 +15,7 @@
 	<element name="Mourning Frost" type="Magic Item" source="Wardens of Faerûn" id="ID_WOF_MOURNING_FROST">
 		<description>
 			<p>
-				The a ir around this staff crackles with a cold, frosty wind - a power that has been divided for too long, and is waiting to be released.
+				The air around this staff crackles with a cold, frosty wind - a power that has been divided for too long, and is waiting to be released.
 			</p>
 			
 			<p><indent><em>Heart of Ice:</em> When dealing cold damage, the wielder deals an additional <em>1 Cold Damage.</em></indent></p>

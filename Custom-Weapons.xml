@@ -65,5 +65,32 @@
 			<set name="weapon">Greatsword</set>
 		</setters>
 	</element>
+
+	<element name="Manticore Crossbow" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_WHIZZ_CROSSBOW">
+		<description>
+			<p>
+				Forged by expert dwarven craftsmen, the Crossbow of the Manticore is a deadly weapon fashioned from the remains of a slain manticore. 
+				Its frame is reinforced with manticore bones and sinew, and the bolts are enchanted to mimic the creature’s fearsome spiked tail. 
+				A small but fierce aura of predatory magic radiates from it, granting the wielder a taste of the manticore’s fierce power.
+			</p>
+			<p class="indent">
+				<em>Manticore's Fury:</em> When you make a ranged attack with this crossbow, you can activate the Manticore’s Fury ability. 
+				You may expend one of three charges to unleash a flurry of spectral spikes alongside the bolt. 
+				If the attack hits, it deals an additional 2d6 piercing damage, as ghostly spines strike the target.
+			</p>
+			<p class="indent">The crossbow regains 1d3 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Crossbow, Light, manticore</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Crossbow, Light">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Crossbow, Light</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
 	
 </elements>
