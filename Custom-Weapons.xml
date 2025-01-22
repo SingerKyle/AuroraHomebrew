@@ -85,10 +85,10 @@
 			<set name="category">Magic Weapons</set>
 			<set name="type" addition="Crossbow, Light">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="enhancement">2</set>
+			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
-			<set name="weapon">Crossbow, Light</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
 			<set name="charges">3</set>
 		</setters>
 	</element>
