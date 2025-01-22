@@ -7,20 +7,28 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.11">
+		<update version="0.0.12">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
 
 	<element name="Rockseeker Clan Token" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_FACTION_ROCKSEEKER_TOKEN">
 		<description>
-			<p>This small, weathered stone is intricately etched with the distinctive insignia of the Rockseeker Clan, depicting a pickaxe and a mountain, intertwined in a pattern that symbolises the clan's deep bond with the earth. 
-			The stone’s surface feels surprisingly warm to the touch, as if imbued with the clan’s ancient energy.</p>
+			<p>
+				This small, weathered stone is intricately etched with the distinctive insignia of the Rockseeker Clan, depicting a pickaxe and a mountain, intertwined in a pattern that symbolises the clan's deep bond with the earth. 
+				The stone’s surface feels surprisingly warm to the touch, as if imbued with the clan’s ancient energy.
+			</p>
 
-			<p>When you possess a Rockseeker Clan Token, it marks you as an ally of the Rockseeker Clan, granting you the following benefits:</p>
+			<p>
+				When you possess a Rockseeker Clan Token, it marks you as an ally of the Rockseeker Clan, granting you the following benefits:
+			</p>
 
-			<p>- <bold>Clan Recognition:</bold>  Members of the Rockseeker Clan recognise you immediately as a friend or trusted associate. 
-			This grants you advantage on Charisma (Persuasion) checks when interacting with any member of the clan, and they will generally be more willing to offer aid or information when asked.</p>
+			<p>
+				<list>
+					<strong>Clan Recognition:</strong>  Members of the Rockseeker Clan recognise you immediately as a friend or trusted associate.
+					This grants you advantage on Charisma (Persuasion) checks when interacting with any member of the clan, and they will generally be more willing to offer aid or information when asked.
+				</list>
+			</p>
 			
 			</description>
 		<setters>
@@ -36,17 +44,25 @@
 
 	<element name="Used Bag of Holding" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_WHIZZ_HOLDING_BAG">
 		<description>
-			<p>This small, weathered bag of holding was previously enchanted by a great magic user. It was broken, seemingly by time and once again reforged by Whizz-Bang Rockseeker inside a lost Netherese crypt.</p>
-
-			<p class="indent">The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.</p>
-			
-			<p class="indent">If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. 
+			<p>
+				This small, weathered bag of holding was previously enchanted by a great magic user. It was broken, seemingly by time and once again reforged by Whizz-Bang Rockseeker inside a lost Netherese crypt.
+			</p>
+			<br/>
+			<p class="indent">
+				The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.
+			</p>
+			<br/>
+			<p class="indent">
+				If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. 
 				If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. 
-				Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.</p>
-
-			<p class="indent">Placing a bag of holding inside an extradimensional space created by a handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. 
+				Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.
+			</p>
+			<br/>
+			<p class="indent">
+				Placing a bag of holding inside an extradimensional space created by a handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. 
 				The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. 
-				The gate then closes. The gate is one-way only and can't be reopened.</p>
+				The gate then closes. The gate is one-way only and can't be reopened.
+			</p>
 			
 		</description>
 		<setters>
@@ -62,8 +78,14 @@
 
 	<element name="Bloodwell Vial" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_VIAL">
 		<description>
-			<p>To attune to this vial, you must place a few drops of your blood into it. The vial can’t be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.</p>
-			<p class="indent">In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 3 sorcery points. This property of the vial can’t be used again until the next dawn.</p>
+			<p>
+				To attune to this vial, you must place a few drops of your blood into it. The vial can’t be opened while your attunement to it lasts. If your attunement to the vial ends, 
+				the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.
+			</p>
+			<br/>
+			<p class="indent">
+				In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 3 sorcery points. This property of the vial can’t be used again until the next dawn.
+			</p>
 		</description>
 		<setters>
 			<set name="keywords">sorcerer, spellcasting focus, sorcery points</set>
@@ -84,9 +106,14 @@
 			<p>
 				Made from the manticore's hide and decorated with claw and fang motifs, the cloak has a faint magical shimmer. Once per day you may take the following reaction:
 			</p>
-			<p class="indent"><em>Tail Swipe (1 Charge):</em> Once per day, the cloak can be used to lash out like a manticore's tail.
-				As a reaction the wearer can deal 1D6 bludgeoning damage to a creature within 5 feet that attacks them <em>OR</em> fly 10 feet away.
-				This damage increases to 1D8 if the wearer falls below half health.</p>
+			<br/>
+			<p>
+				<list>
+					<strong>Tail Swipe (1 Charge):</strong> Once per day, the cloak can be used to lash out like a manticore's tail.
+					As a reaction the wearer can deal 1D6 bludgeoning damage to a creature within 5 feet that attacks them <strong>OR</strong> fly 10 feet away.
+					This damage increases to 1D8 if the wearer falls below half health.
+				</list>
+			</p>
 
 		</description>
 		<setters>
@@ -107,8 +134,10 @@
 				These leather gloves are embedded with sharp manticore claws extending over the knuckles.
 				The claws have been polished and enchanted to be razor sharp, providing extra damage with unarmed strikes.
 			</p>
-			<p class = "indent"><em>Claws of the Beast:</em> The gauntlets while attuned, allow the wearer to make unarmed attacks with the manticore claws, dealing 1D6 + strength slashing damage.
-				If your unarmed strikes are already 1D6, your strikes now deal 1D8 + strength. </p>
+			<p>
+				<strong>Claws of the Beast:</strong> The gauntlets while attuned, allow the wearer to make unarmed attacks with the manticore claws, dealing 1D6 + strength slashing damage.
+				If your unarmed strikes are already 1D6, your strikes now deal 1D8 + strength. 
+			</p>
 		</description>
 		<setters>
 			<set name="keywords">Gauntlet, monk, unarmed</set>
@@ -127,7 +156,10 @@
 			<p>
 				This cloak shimmers with a silver hue and appears as if it's woven from starlight itself. When worn, it grants you an aura of calm control.
 			</p>
-			<p class="indent">When wearing this cloak you gain an additional +1 bonus to AC. You feel the cloak is not revealing all magic to you currently</p>
+			<br/>
+			<p>
+				When wearing this cloak you gain an additional +1 bonus to AC. You feel the cloak is not revealing all magic to you currently
+			</p>
 
 		</description>
 		<setters>

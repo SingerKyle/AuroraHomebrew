@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.10">
+		<update version="0.0.12">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-staffs.xml" />
 		</update>
 	</info>
@@ -18,9 +18,9 @@
 				The air around this staff crackles with a cold, frosty wind - a power that has been divided for too long, and is waiting to be released.
 			</p>
 			
-			<p><indent><em>Heart of Ice:</em> When dealing cold damage, the wielder deals an additional <em>1 Cold Damage.</em></indent></p>
+			<p><indent><strong>Heart of Ice:</strong> When dealing cold damage, the wielder deals an additional <em>1 Cold Damage.</em></indent></p>
 
-			<p><indent><em>Insidious Cold:</em> Upon dealing cold damage, the creature will roll a D4. On a 2 or lower the creature is <em>Chilled</em>, resulting in double cold damage dealt to the target.</indent></p>
+			<p><indent><strong>Insidious Cold:</strong> Upon dealing cold damage, the creature will roll a D4. On a 2 or lower the creature is <em>Chilled</em>, resulting in double cold damage dealt to the target.</indent></p>
 			
 		</description>
 		<setters>
@@ -44,8 +44,8 @@
 				glowing softly with a pale blue light when exposed to moonlight or water.
 				The staff exudes a calming presence, as if imbued with the rhythm of the tides.
 			</p>
-
-			<p class = "indent">This staff can cast <em>Create / Destroy Water</em> once per day, and allows for the casting of <em>Control Water</em>.</p>
+			<br/>
+			<p>This staff can cast <em>Create / Destroy Water</em> once per day, and allows for the casting of <em>Control Water</em>.</p>
 		</description>
 		<setters>
 			<set name="keywords">quarterstaff, Monk, Wavecrest</set>

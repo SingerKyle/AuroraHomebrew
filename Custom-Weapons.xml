@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.11">
+		<update version="0.0.12">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -73,12 +73,16 @@
 				Its frame is reinforced with manticore bones and sinew, and the bolts are enchanted to mimic the creature’s fearsome spiked tail. 
 				A small but fierce aura of predatory magic radiates from it, granting the wielder a taste of the manticore’s fierce power.
 			</p>
-			<p class="indent">
-				<em>Manticore's Fury:</em> When you make a ranged attack with this crossbow, you can activate the Manticore’s Fury ability. 
+			<br/>
+			<p>
+				<strong>Manticore's Fury:</strong> When you make a ranged attack with this crossbow, you can activate the Manticore’s Fury ability. 
 				You may expend one of three charges to unleash a flurry of spectral spikes alongside the bolt. 
 				If the attack hits, it deals an additional 2d6 piercing damage, as ghostly spines strike the target.
 			</p>
-			<p class="indent">The crossbow regains 1d3 expended charges daily at dawn.</p>
+			<br/>
+			<p>
+				The crossbow regains 1d3 expended charges daily at dawn.
+			</p>
 		</description>
 		<setters>
 			<set name="keywords">Crossbow, Light, manticore</set>
