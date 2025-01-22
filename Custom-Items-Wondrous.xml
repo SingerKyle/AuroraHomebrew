@@ -78,5 +78,30 @@
 			<stat name="sorcerer:spellcasting:dc" value="1"/>
 		</rules>
 	</element>
+
+	<element name="Cape of the Manticore" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_MANTI_SHIELD">
+		<description>
+			<p>
+				Made from the manticore's hide and decorated with claw and fang motifs, the cloak has a faint magical shimmer. Once per day you may take the following reaction:
+			</p>
+			<p class="indent"><em>Tail Swipe (1 Charge):</em> Once per day, the cloak can be used to lash out like a manticore's tail.
+				As a reaction the wearer can deal 1D6 bludgeoning damage to a creature within 5 feet that attacks them <em>OR</em> fly 10 feet away.
+				This damage increases to 1D8 if the wearer falls below half health.</p>
+
+		</description>
+		<setters>
+			<set name="keywords">cloak, armor</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+		<rules>
+			
+		</rules>
+	</element>
 	
 </elements>
