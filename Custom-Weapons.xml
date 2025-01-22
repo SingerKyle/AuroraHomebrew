@@ -111,5 +111,6 @@
 			<set name="proficiency">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</set>
 		</setters>
 	</element>
+
 	
 </elements>

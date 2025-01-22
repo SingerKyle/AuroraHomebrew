@@ -35,5 +35,28 @@
 			<set name="rarity">Very Rare</set>
 		</setters>
 	</element>
+
+	<element name="Wavecrest" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_WAVECREST">
+		<description>
+			<p>
+				This weathered quarterstaff appears to be an ordinary piece of driftwood, its surface smoothed by years of ocean currents.
+				However, upon closer inspection, faint carvings of waves and spiraling patterns run along its length,
+				glowing softly with a pale blue light when exposed to moonlight or water.
+				The staff exudes a calming presence, as if imbued with the rhythm of the tides.
+			</p>
+
+			<p class = "indent">This staff can cast <em>Create / Destroy Water</em> once per day, and allows for the casting of <em>Control Water</em>.</p>
+		</description>
+		<setters>
+			<set name="keywords">quarterstaff, Monk, Wavecrest</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Quarterstaff">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">false</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="proficiency">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</set>
+		</setters>
+	</element>
 	
 </elements>
