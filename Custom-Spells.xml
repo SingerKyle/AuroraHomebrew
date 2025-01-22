@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.15">
+		<update version="0.0.16">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -73,7 +73,7 @@
 		</setters>
 	</element>
 
-	<element name="Ice Spear" type="Spell" source="Custom" id="ID_AH_WOF_SPELL_ICESPEAR">
+	<element name="Ice Spear" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_ICESPEAR">
 		<supports>Sorcerer, Wizard</supports>
 		<description>
 			<p>
@@ -149,10 +149,9 @@
 		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>
-				Documented as being created during the Apprentice Malazar during the Crown Wars, 
+				Documented as being created by the Apprentice Malazar during the Crown Wars, 
 				this spell creates a regenerating abjurative force field around a single willing creature you can see within range. 
-				For the duration, at the start of each of its turns, 
-				it gains a number of temporary hit points equal to spell cast level plus your spellcasting ability modifier.
+				For the duration, at the start of each of its turns it gains a number of temporary hit points equal to spell cast level plus your spellcasting ability modifier.
 			</p>
 			
 			<p>These temporary hit points disappear when the spell ends.</p>
@@ -221,7 +220,7 @@
 				The icy shield has 30 hit points and lasts until the end of your next turn. The shield is vulnerable to fire damage and immune to cold damage.</p>
 
 			<p>
-				On your turn, if the shield has remaining hit points, you can transmute it into an icicle and make a ranged spell attack against a creature within 60 feet. 
+				On your turn, if the shield has remaining hit points, you can use a bonus action to transmute it into an icicle and make a ranged spell attack against a creature within 60 feet. 
 				On a hit, the target takes 1d8 cold damage, plus the remaining hit points of the shield. Alternatively, you can convert the shield back into the material component.
 			</p>
 
