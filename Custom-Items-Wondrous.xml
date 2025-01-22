@@ -91,7 +91,7 @@
 		</description>
 		<setters>
 			<set name="keywords">cloak, armor</set>
-			<set name="category">Magic Armor</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">250</set>
 			<set name="weight" lb="15">15 lb.</set>
 			<set name="slot">shoulders</set>
