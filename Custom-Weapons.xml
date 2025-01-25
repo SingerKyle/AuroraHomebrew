@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -61,6 +61,36 @@
 			<set name="type" addition="greatsword">Weapon</set>
 			<set name="rarity">Very Rare</set>
 			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Greatsword</set>
+		</setters>
+	</element>
+
+	<element name="Dreadsong" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_DREADSONG">
+		<description>
+			<p>
+				<em>
+					“Its blade gleams black as obsidian, with a ripple of crimson streaking across the length of the edge.
+					The hilt is wrapped in blackened leather, cracked and worn. 
+					The pommel holds a faintly glowing ruby.”
+				</em>
+			</p>
+			<p class="indent">
+				<em>Dreadsong</em> is a magic, sentient weapon that grants a +1 bonus to attack and damage rolls made with it. For now...
+			</p>
+			<p>
+				<i>
+					<b>Sentience.</b>
+				</i><em>Dreadsong</em> is a sentient, Chaotic Evil weapon with an Intelligence of 16, a Wisdom of 13, and a Charisma of 14. The item has Hearing and darkvision out to 120 ft, can speak, read, and understand common, dwarven and Netherese. 
+				In addition, the item can communicate telepathically with any character that carries or wields it.
+			</p>
+			
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
 			<set name="weapon">Greatsword</set>
 		</setters>
