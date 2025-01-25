@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.19">
+		<update version="0.0.20">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -139,6 +139,36 @@
 		</setters>
 	</element>
 
+	<element name="Icicle Break" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_ICICLE_BREAK">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>
+				You create three medium bolts of ice, and shoot them at targets within range. You can hurl them at one target or several. 
+				Make a ranged spell attack for each bolt. On a hit, the creature takes 1d6 cold damage. 
+				If at least 3 bolts hit a single creature, and the creature fails a constitution saving thow, it applies the <em>Chilled</em> condition, if attuned to <em>Mourning Frost</em> until the start of your next turn.
+			</p>
+			<br/>
+			<p>Creatures that are resistant or immune to cold damage automatically succeed the saving throw.</p>
+			
+			<p><strong>At Higher Levels.</strong>When you cast this spell using a spell slot of 2nd level or higher, you create one additional bolt for each slot level above 1st.</p>
+			
+		</description>
+		<setters>
+			<set name="keywords">Ice</set>
+			<set name="level">1</set>
+			<set name="school">evocation </set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
 	<!--
 	
 	                                                           LEVEL 2
@@ -157,7 +187,7 @@
 			<p>These temporary hit points disappear when the spell ends.</p>
 
 			<p>
-				<strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+				<strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, you may add your proficiency modifier to the temporary hit points value.
 			</p>
 
 			<p>
@@ -217,7 +247,84 @@
 		</setters>
 	</element>
 
+	<element name="Quick Change" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_QUICK_CHANGE">
+		<supports>Artificer</supports>
+		<description>
+			<p>
+				Choose a willing creature and a suit of armor that creature is proficient with. 
+				The armor briefly animates and instantly becomes donned or doffed by the creature.
+			</p>
 
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">2</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Netherese Tazer" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_TAZER">
+		<supports>Artificer</supports>
+		<description>
+			<p>
+				You point your finger at a creature you can see within range, and a thin beam of lightning rushes to your target.
+				Make a range spell attack against the creature. On a hit, it takes 3d6 lightning damage and must succeed on a constitution saving throw or fall prone. 
+				<br/>
+				If the target is resistant or immune to lightning damage, it automatically succeeds the saving throw.
+			</p>
+			
+			<p><strong>At higher levels,</strong>when you cast this spell using a 3rd-level spell slot or higher, the damage increases by 2d6 for each level above 2nd, up to a maximum of 9d6</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">2</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Frozen Armament" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_FROZEN_WEAPON">
+		<supports>Artificer</supports>
+		<description>
+			<p>
+				You enchant the weapon you’re holding with frost magic. The weapon glows white, radiating a freezing mist. 
+				The first time on your turn that you hit with the enchanted weapon, you deal an extra 1d8 cold damage
+			</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">2</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 	<!--
 	
@@ -274,8 +381,7 @@
 
 			<p>
 				That creature must make a constitution saving throw against your spell save DC,
-				on a failed save target creature takes 2d8 cold damage,
-				has their speed halved, and becomes vulnerable to piercing, slashing and bludgeoning damage for the duration of the spell.
+				on a failed save target creature takes 2d8 cold damage, reduces ground movement by half, and takes an additional 1d6 cold damage the first time it takes damage from any source during the duration.
 				On a successful save the target takes half damage and experiences no other effects. Creatures who fail there save may repeat it at the start of each of their turns.
 			</p>
 			<break/>
@@ -284,16 +390,19 @@
 				Creatures with immunity to cold automatically succeed on the save.
 			</p>
 			
-			<p><strong>Mastery: Entrapping Ice:</strong> The target is restrained until they succeed on a Constitution saving throw at the end of their turn. 
-				On a successful save, the creature is no longer restrained but remains affected by the spell’s cold and vulnerability effects.
+			<p><strong>At higher levels.</strong>When cast using a spell slot of 4th level or higher, the damage dealth increases by 1d8 per spell slot level, and the additional cold damage increases by 1d6 per spell slot level.</p>
+			
+			<p>
+				<strong>Mastery: Entrapping Ice:</strong> The target’s movement is reduced to 0 until the start of your next turn.
 			</p>
+			
 		</description>
 		<setters>
-			<set name="keywords">cold, vulnerability</set>
-			<set name="level">2</set>
+			<set name="keywords">cold</set>
+			<set name="level">3</set>
 			<set name="school">Transmutation</set>
 			<set name="time">1 action</set>
-			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="duration">Concentration, up to 4 rounds</set>
 			<set name="range">60 ft</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
@@ -336,10 +445,10 @@
 		<description>
 			<p>A spell few would dare to learn, outlawed even to mages of Thay. Dating back to the Netherese Empire. A spell created by the late Archmage Malazar </p>
 			
-			<p>You summon a small void rift in your palm, siphoning energy from a magical source or creature. The target must make a Constitution saving throw or lose a spell slot (chosen at random). You regain hit points equal to twice the slot’s level..</p>
-			<!--<p class="indent">The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast of CR 1 or less that does not have a fly speed. While in this new form, the target is charmed by you and views you as a trusted ally. The target can understand simple commands such as “attack” or “stay.” The charm affects creatures that are immune to charm in their normal form. The charm ends immediately when the target reverts to its normal form.</p>
-			<p class="indent">The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak, cast spells, or take any other action that requires hands or speech. The creature's gear melds into its new form. The creature can’t activate, use, wield, or otherwise benefit from any of its equipment.</p>
-			<p class="indent">The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form.</p> -->
+			<p>You summon a small void rift in your palm, siphoning energy from a magical source or creature. The target must make a Constitution saving throw or lose a spell slot (chosen at random). You regain hit points equal to twice the slot’s level.</p>
+			
+			<p>If the target succeeds on the saving throw you instead lose the spell slot they would have lost (or the closest equivalent).</p>
+			
 		</description>
 		<setters>
 			<!--<set name="keywords"></set>-->
@@ -388,13 +497,144 @@
 		</setters>
 	</element>
 
+
+	<element name="Lighten Load" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_LIGHT_LOAD">
+		<supports>Artificer</supports>
+		<description>
+			<p>
+				You touch a suit of medium or heavy armor. 
+				Until the spell ends, the chosen armor's weight is reduced by half, 
+				it no longer imposes disadvantage on stealth checks if it would do so otherwise, 
+				and if it has a strength requirement that requirement is reduced by 3.
+			</p>
+
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, you may affect an extra set of armour.</p>
+			
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">3</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Minute.</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A pinch of cotton wool.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	
+	
 	<!--
 	
 	                                                           LEVEL 4
 	
 	-->
+
+	<element name="Void Weapon" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_LIGHT_LOAD">
+		<supports>Artificer</supports>
+		<description>
+			<p>
+				You touch a weapon and imbue it with a dark hunger from the void. 
+				Until the spell ends, weapon attacks made with it deal an extra 1d8 necrotic damage on a hit, the amount of necrotic damage on the roll will be given to the weapon's wielder as temporary hit points.
+				If the weapon isn’t already a magic weapon, it becomes one for the duration.
+			</p>
+
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 5th level or higher, you may deal an extra 1d8 damage.</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">4</set>
+			<set name="school">transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">concentration, up to 1 Minute.</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">blood from your hand, taking 1d4 damage</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Malazar's Ice Storm" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_ICE_STORM">
+		<supports>Sorcerer, Druid, Ranger, Wizard</supports>
+		<description>
+			<p>
+				You thrust your staff into the ground and summon a freezing tornado around you. 
+				When you cast this spell, ALL creatures within 30 feet from you must make a Dexterity saving throw. 
+				<br/>
+				On a failed save, they take 4d6 cold damage and applies the <em>Chilled</em> condition, if attuned to <em>Mourning Frost</em> until the start of your next turn.
+				<br/>
+				On a success, they only take half the damage rolled. 
+				<br/>
+				While you mantain concentration, if a creature starts their turn within 30 feet of you, 
+				they must make a Dexterity saving throw. On a failed save, they take 2d6 cold damage. 
+				On a success, they only take half the damage rolled.
+			</p>
+
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 5th level or higher, the damage of the tornado summon increases by 1d6 for each slot level above 4th.</p>
+
+			<br/>
+			
+			<p>
+				According to Iceweaver records, this spell was created in −3830 DR by Archmage Malazar for the climactic battles of the Netherese schism,
+				capable of unleashing devastating cold to immobilize enemies and disrupt their formations, no matter the cost.
+			</p>
+			
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">4</set>
+			<set name="school">evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self, 30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A staff or cane</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<!--
 	
+	                                                           LEVEL 5
 	
-	
+	-->
+
+	<element name="Sever Bond" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_SEVER_BOND">
+		<supports>Artificer</supports>
+		<description>
+			<p>
+				You draw upon your knowledge of enchantments to shatter another creature's connection to an item.
+				Choose a magic item that you can see and that another creature is attuned to. 
+				The creature must make an Intelligence saving throw. On a failed save, the creature's attunement to the chosen magic item is broken.
+				If the item is cursed, the attunement cannot be broken by this spell.
+			</p>
+			
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A pair of scissors or shears.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 </elements>
