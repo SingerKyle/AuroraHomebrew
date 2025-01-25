@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.14">
+		<update version="0.0.15">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -40,6 +40,25 @@
 			<set name="type" addition="longsword">Weapon</set>
 			<set name="rarity">Very Rare</set>
 			<set name="enhancement">2</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+
+	<element name="Fang Blade of the Manticore" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_MANTI_SWORD">
+		<description>
+			<p>
+				Forged from manticore fangs, the blade is translucent bone-white with a wickedly sharp edge, it feels unnaturally warm to the touch.
+			</p>
+			<p>
+				<strong>Venomous Strikes:</strong> The blade can deliver a dose of manticore venom on a hit, adding 1d6 poison damage. The poison lasts for 1 hour once applied. Charges are regained after a long rest.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
 			<set name="weapon">Longsword</set>
 		</setters>
