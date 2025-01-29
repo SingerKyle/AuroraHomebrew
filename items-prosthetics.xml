@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Prosthetic Items</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -21,7 +21,7 @@
 		</description>
 		<setters>
 			<set name="keywords"/>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Prosthetic Limbs</set>
 			<set name="weight" lb="1">15 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Common</set>
@@ -44,7 +44,7 @@
 		</description>
 		<setters>
 			<set name="keywords"/>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Prosthetic Limbs</set>
 			<set name="weight" lb="1">15 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
@@ -67,7 +67,7 @@
 		</description>
 		<setters>
 			<set name="keywords"/>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Prosthetic Limbs</set>
 			<set name="weight" lb="1">15 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
@@ -89,7 +89,7 @@
 		</description>
 		<setters>
 			<set name="keywords"/>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Prosthetic Limbs</set>
 			<set name="weight" lb="1">15 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
@@ -138,7 +138,7 @@
 		</description>
 		<setters>
 			<set name="keywords"/>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Prosthetic Limbs</set>
 			<set name="weight" lb="1">15 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="cost" currency="gp">3500</set>
@@ -163,7 +163,7 @@
 		</description>
 		<setters>
 			<set name="keywords"/>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Prosthetic Limbs</set>
 			<set name="weight" lb="1">15 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="cost" currency="gp">1600</set>
@@ -196,7 +196,7 @@
 		</description>
 		<setters>
 			<set name="keywords"/>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Prosthetic Limbs</set>
 			<set name="weight" lb="1">15 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
@@ -229,7 +229,7 @@
 		</description>
 		<setters>
 			<set name="keywords"/>
-			<set name="category">Wondrous Items</set>
+			<set name="category">Prosthetic Limbs</set>
 			<set name="weight" lb="1">15 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
