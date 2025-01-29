@@ -6,7 +6,7 @@
 		The following are spells, items and other such things for my homebrew campaign. The Wardens of Faerûn, enjoy team.
 		</description>
 		<author url="https://github.com/SingerKyle/AuroraHomebrew">Eonkyle</author>
-		<update version="0.0.11">
+		<update version="0.0.12">
 			<file name="Wardens.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens.index" />
 		</update>
 	</info>
@@ -19,6 +19,9 @@
         <file name="Custom-Armour.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Armour.xml" />
         <file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
         <file name="Custom-Items-wondrous.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items-Wondrous.xml" />
+        <file name="Custom-Items-Infusions.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items-Infusions.xml" />
+        <file name="items-prosthetics.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/items-prosthetics.xml" />
+        <file name="Custom-Potions.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Potions.xml" />
 	
 	</files>
 </index>

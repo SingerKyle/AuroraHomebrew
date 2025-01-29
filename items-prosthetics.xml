@@ -172,6 +172,72 @@
 		</setters>
 	</element>
 
+	<element name="Ornate Ceramic Prosthetic" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_CERAMIC_LIMB">
+		<description>
+			<p>
+				This prosthetic appendage was developed by a mysterious Puppeteer. The painted patterns on its surface vary from an individual to another. 
+				To attune to this item, you must attach it to your arm at the wrist, elbow, or shoulder, at which point the ceramic plating will magically extend and form a copy of the appendage it’s replacing.
+			</p>
+				<br/>
+			<p>
+				The prosthetic is a fully capable part of your body, You can take an action to remove the prosthetic, and it removes itself if your attunement to it ends. It can’t be removed against your will.
+			</p>
+				<br/>
+			<p>
+				When performing unarmed strikes, the ceramic plating on the side of your hand suddenly becomes sharp and thin. You deal 1d6 magical slashing damage.
+			</p>
+				<br/>
+			<p>
+				<strong>Full plating.</strong> As an action you can say the command word to activate the ceramic plating, recovering your whole body for 1 minute. You have the appearance of an automated porcelain doll.
+				You gain +2 AC and you are still considered unarmored. You are vulnerable to bludgeoning damage and gain resistance to fire and slashing damage. You can use the Prosthetic in this manner again once you complete a short rest.
+			</p>
+				
+			
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Ornate Ceramic Prosthetic" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_CERAMIC_LIMB">
+		<description>
+			<p>
+				This spectral floating cluster can replace a hand, arm, foot, leg, or similar appendage that was lost or removed. 
+				It glows with green and blue hues and looks almost intangible. Despite its appearance, the phantom limb cannot phase through any material or creature. 
+				While the phantom limb is attached and attuned to you, it functions identically to the body part it is replacing. You can make it appear or disappear at will as a free action.
+			</p>
+			<br/>
+			<p>
+				If you have multiple prosthetic limbs, they count as a single magic item with regard to the number of magic items you can attune to.
+			</p>
+			<br/>
+			<p>
+				Your phantom limb has a reach of 10.ft when making unarmed strikes or attacks with a weapon with the light property.
+			</p>
+			<br/>
+			<p>
+				As an action, you can detach your limb. When your limb is detached it acts as described by the spell mage hand. You can use an action to reattach your limb as long as it is within 30 feet of you.
+			</p>
+
+
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
 	<!--
 	
 	                                                           Built-In Tools
