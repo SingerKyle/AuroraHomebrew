@@ -37,6 +37,46 @@
 			<set name="armor">Shield</set>
 		</setters>
 		<rules>
+			<stat name="ac:armored:enhancement" value="2" bonus="enhancement"/>
+		</rules>
+	</element>
+
+	<element name="Mister Shield" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_SENTIENT_SHIELD">
+		<description>
+			<p>
+				This magical shield has an animated face carved into it. 
+				It may be unreliable piece of armour, but it certainly an encouraging battle companion. 
+				Due to the holes in the face of this shield, it only grants a +1 bonus to AC instead of the normal shield bonus.
+			</p>
+			<p>
+				<strong>Grounding Confidence.</strong>While holding <em>Mister Shield</em> you gain a +1 bonus to Wisdom saving throws.
+			</p>
+			<p>
+				<strong>Stalwart Positivity.</strong> When an attack roll misses you while holding <em>Mister Shield</em>,
+				you gain Heroic Inspiration. Once triggered, you can't benefit from this property again until you complete a short or long rest.
+			</p>
+			<p>
+				<strong>Sentience.</strong> <em>Mister Shield</em> is a sentient, neutral good shield with an Intelligence of 8, a Wisdom of 10, and a charisma of 16. It can see and hear out to a range of 60 ft.
+				The shield can speak, read and understand common. <em>Mister Shield</em> is a jolly and supportive companion who always compliments the bravery of its wielder and cheers when blocking attacks. 
+				<em>Mister Shield</em> doesn't like violence, and believes friendship is always the answer.
+			</p>
+			<p>
+				<em>"Ha HA! Nice One!" Mister Shield Exclaimed as the demon's flaming flail bounced off its rim. "Even though we're totally surrounded, your defence is unbreakable!"</em>
+				</br>
+				<em>Jesse yelped as a dagger jabbed her arm, "Shut up! Every time you talk, I get stabbed through your friggin mouth hole!"</em>
+				</br>
+				<em>With each demon that Jesse defeated, another crawled through the portal to take its place. This was a disaster.</em>
+			</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="armor">Shield</set>
+		</setters>
+		<rules>
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
 		</rules>
 	</element>

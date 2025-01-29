@@ -291,7 +291,7 @@
 			<set name="school">transmutation</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
-			<set name="range">Touch</set>
+			<set name="range">45 ft</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
