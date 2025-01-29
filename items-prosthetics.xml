@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wondrous Items</name>
+		<update version="0.0.1">
+			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
+		</update>
+	</info>
+
+	<element name="Standard Mechanical Limb" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_STANDARD_LIMB">
+		<description>
+			<p>
+				This solid steel mechanical prosthetic, once attached to a functional prosthetic base, allows the user the same range of motion and functionality of the arm or leg it is replacing.
+				The lack of sensory feedback from the limb, however, can make some tasks more difficult than normal.
+				<br/>
+				Add +2 to any Strength saving throws and Athletics checks made using this limb. Additionally, if you do not benefit from the Martial Arts feature of the Monk class,
+				add +2 to the damage of any unarmed strikes made using this limb.
+				<br/>
+				Sleight of Hand checks and skill checks requiring fine motor control made using this limb have a -2 penalty.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Prosthetic Limb</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">false</set>
+		</setters>
+	</element>
+
+	<element name="Cold Weather Prosthetic Limb" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_COLD_LIMB">
+		<description>
+			<p>
+				This prosthetic functions much like a standard mechanical limb, but is made of a lighter, more expensive alloy that is resistant to temperature changes. 
+				As a result, this prosthetic no longer suffers from the ill effects of cold environments as described in the Practical Concerns section of this document.
+				<br/>
+				Add +1 to any Strength saving throws and Athletics checks made using this limb. 
+				Additionally, if you do not benefit from the Martial Arts feature of the Monk class, add +1 to the damage of any unarmed strikes made using this limb.
+				<br/>
+				Sleight of Hand checks and skill checks requiring fine motor control made using this limb have a -2 penalty.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Prosthetic Limb</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">false</set>
+		</setters>
+	</element>
+
+	<element name="Shielded Prosthetic Limb" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_SHIELD_LIMB">
+		<description>
+			<p>
+				The chassis of this artificial limb is made of rare and expensive alloys that shield the prosthetic base from magical influence, allowing the limb to continue functioning, even while under the effects of spells such as Antimagic Field.
+				<br/>
+				Add +1 to any Strength saving throws and Athletics checks made using this limb. Additionally, if you do not benefit from the Martial Arts feature of the Monk class, add +1 to the damage of any unarmed strikes made using this limb.
+				<br/>
+				Sleight of Hand checks and skill checks requiring fine motor control made using this limb have a -2 penalty.
+				<br/>
+				Additionally, magical effects directly targeting the chassis of this limb (such as Mend) fizzle out and do nothing.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Prosthetic Limb</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">false</set>
+		</setters>
+	</element>
+
+	<element name="Full-Feedback Prosthetic Limb" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_FEEDBACK_LIMB">
+		<description>
+			<p>
+				This artificial limb is much less bulky than its counterparts and its frame more closely follows the contours of an organic limb. 
+				The interior of its chassis is lined with copper, precious metals, and complex arcane engravings. 
+				A powerful enchantment provides full sensory feedback to its user, allowing all sorts of tasks to be accomplished with the limb.
+				<br/>
+				Add +1 to any Strength saving throws and Athletics checks made using this limb. 
+				Additionally, if you do not benefit from the Martial Arts feature of the Monk class, add +1 to the damage of any unarmed strikes made using this limb.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Prosthetic Limb</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">false</set>
+		</setters>
+	</element>
+
+	<element name="Spellsapper Claw" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_SPELLCLAW">
+		<description>
+			<p>
+				While it may be unpleasant to look at and eerily cold to the touch, the viscous slime coating this prosthesis won’t harm you. Unless you can cast spells, that is. Then it will. Horribly.
+			</p>
+
+			<p>
+				This item replaces a lost arm. While the prosthetic is attached, it functions identically to the part it replaces.
+				You can detach or reattach it as an action, and it can’t be removed against your will. It detaches if you die.
+			</p>
+
+			<p>
+				As a bonus action, you can cause this prosthesis to emit dim light in a <strong>10-foot radius</strong> or extinguish the light.
+			</p>
+
+			<p>
+				<strong>Prosthesis Properties.</strong> This prosthesis can enhance or replace an arm. It has the Melee (1d6 slashing, Pugilist) property and the Hamstring Superior Strike.
+			</p>
+
+			<p>
+				<strong>Arcanovore.</strong>
+				You have <strong>advantage</strong> on ability checks made to grapple creatures capable of casting one or more spells using this prosthesis, and while grappling one, you can use an action to drain some of its magical power.
+				The creature loses a 1st-level spell slot, or it loses one daily use of a random 1st-level spell. This magic is stored in the prosthesis, and while it contains stored magic, it can’t be used to drain more.
+				As an action while the prosthesis contains stored magic, you can touch a creature with it and expend the stored magic, causing the creature to regain an expended spell slot of equal level to the spell slot or spell that was stored within.
+				Once this property has been used, roll a <strong>d6</strong>. On a roll of <strong>2</strong> or lower, it can’t be used again until the next dawn.
+			</p>
+
+			<p>
+				<strong>Greatsword (2d6, Property +1).</strong> The prosthesis is a martial melee weapon.
+				If you’re proficient with a martial melee weapon, you’re considered proficient with this weapon.
+				The information in parentheses notes the weapon’s damage dice, damage type, and any additional weapon properties it may have, respectively.
+			</p>
+
+			<p>
+				<strong>Pugilist.</strong> For creatures that roll a die when they make unarmed strikes (such as the monk),
+				the size of their damage die is increased by one (maximum 1d12) when they make unarmed strikes with a hand equipped with a weapon that has this property.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Prosthetic Limb</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Windewaver" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_WINDWEAVER">
+		<description>
+			<p>
+				Requires an elemental core of air to be crafted.
+				<br/>
+				“Eagles soar above Where no man could ever reach Good thing I’m no man.”
+				<br/>
+				Haiku written by Bombuku the tanukin during the crafting of the first windweaver
+				<br/>
+				This prosthesis has a built-in war fan that can be used to propel yourself with blasts of magical wind. It has the Integrated (tessen) and Blast (2d6 bludgeoning, 30 ft.) properties.
+				<br/>
+				Stick the Landing. When you fall, you can use your reaction to unleash a blast of wind moments before you hit the ground, cushioning you and reducing the falling damage you take to 0.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<!--
+	
+	                                                           Built-In Tools
+	
+	-->
+
+	<element name="Built-In Tools" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_TOOLS">
+		<description>
+			<p>
+				A basic set of artisan’s tools of your choice, such as Thieves' Tools or Carpenter’s tools, are built into your prosthetic limb. 
+				You may deploy or stow these tools at will.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Prosthetic Modification</set>
+			<set name="weight" lb="1">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">false</set>
+		</setters>
+	</element>
+	
+</elements>

@@ -191,5 +191,45 @@
 			<set name="proficiency">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
 		</setters>
 	</element>
+
+	<element name="Javelin of Impalement" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_JAVELIN_IMPALEMENT">
+		<description>
+			<p>
+				This javlelin is a sleep metal rod with a razor-sharp point. It feels heavy in your hand, but despite it's weight it's surprisingly easy to throw.
+			</p>
+			<br/>
+			<p>
+				<strong>Razor Sharp.</strong> You have a +1 bonus to attack and damage rolls made with this magic weapon.
+			</p>
+			<br/>
+			<p>
+				<strong>Impale.</strong> When you hit a creature with a ranged attack using this javelin, 
+				the target must succeed on a DC 15 strength saving throw or become impaled by the javelin, 
+				taking an extra 1d6 piercing damage and becoming restrained until the javelin is removed. 
+				The javelin pins the target to the ground or any solid surface behind it, preventing the target from moving unless it breaks free.
+				<br/>
+				As an action, the impaled creature can attempt to free itself from the javelin by making a DC15 Strength (Athletics) check. 
+				On a success, the creature is no longer restrained and can move normally but takes 1d6 slashing damage as a javelin tears through its flesh.
+			</p>
+			<br/>
+			<p>
+				<strong>Recall.</strong> As a bonus action, you can speak the javelin's command word and cause it to return to your hand. Provided that you are within 100 ft of it and have a free hand.
+				 If the javelin is impaling a creature, the creature takes 1d6 slashing damage as the javelin pulls free from it.
+			</p>
+			<p>
+				<strong>High Ground.</strong> If you are at least 5 ft higher than your target when you throw this javelin, you deal an additional 1d6 piercing damage for every 5 feet of height difference.
+				 Up to a maximum of 3d6. This damage is added after applying the impalement effect.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Sword, rapier</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Weapon">Weapon</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Javelin</set>
+		</setters>
+	</element>
 	
 </elements>
