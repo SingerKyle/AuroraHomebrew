@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<info>
+		<name>Armours</name>
+		<description>
+			
+		</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-armor.xml" />
+		</update>
+	</info>
+
+	<element name="Troll's Blood Elixir" type="Magic Item" source="Dungeon Master’s Guide" id="ID_WOTC_DMG_MAGIC_ITEM_POTION_OF_CLIMBING">
+		<description>
+			<p>
+				This potion contains a thick, green liquid that smells like rotten meat.
+			</p>
+			<p>
+				When you drink this potion, you gain the trolls regeneration feature for 1 minute, providing you're in combat. 
+				At the start of each of your turns, you regain 5 hit points as long as you have at least 1 hit point. If you take acid or fire damage, 
+				this trait ceases to function at the start of your next turn.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+</elements>

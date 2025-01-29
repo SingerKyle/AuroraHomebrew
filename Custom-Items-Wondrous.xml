@@ -123,7 +123,7 @@
 			<set name="weight" lb="15">15 lb.</set>
 			<set name="slot">shoulders</set>
 			<set name="type">Wondrous Item</set>
-			<set name="attunement">true</set>
+			<set name="attunement">false</set>
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
@@ -135,9 +135,12 @@
 				The claws have been polished and enchanted to be razor sharp, providing extra damage with unarmed strikes.
 			</p>
 			<p>
-				<strong>Claws of the Beast:</strong> The gauntlets while attuned, allow the wearer to make unarmed attacks with the manticore claws, dealing 1D6 + strength slashing damage.
-				If your unarmed strikes are already 1D6, your strikes now deal 1D8 + strength. 
+				<strong>Claws of the Beast:</strong>
+				while attuned, the gauntlets allow for creatures that roll a die when they make unarmed strikes (such as the monk), 
+				to increase the size of their damage die by one (maximum 1d12) when they make unarmed strikes with a hand equipped with the gauntlets.
+				Otherwise the gauntlets allow the wearer to make unarmed attacks with the manticore claws, dealing 1D6 + strength slashing damage.
 			</p>
+			
 		</description>
 		<setters>
 			<set name="keywords">Gauntlet, monk, unarmed</set>
@@ -175,6 +178,77 @@
 		<rules>
 			<stat name="ac:misc" value="1"/>
 		</rules>
+	</element>
+
+	<element name="Earth-Crusher Boots" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_EARTH_BOOTS">
+		<description>
+			<p>
+				These boots have proficiency bonus number of charges and regains all charges at the end of a long rest. While you wear these boots, 
+				you can take an attack action to stomp the earth, 
+				expending one charge and causing a shattering of earthin a 10 ft radius.
+				<br/>
+				Every creature caught in this radius other than you must make a (DC8 + proficiency + strength modifier dexterity) saving throw or take 2d6 bludgeoning damage and fall prone 
+				or take half as much damage and not fall prone on a successful one.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Barbarian, Boots</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="15">20 lb.</set>
+			<set name="slot">feet</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a Barbarian">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Spellsapper Claw" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_SPELLCLAW">
+		<description>
+			<p>
+				While it may be unpleasant to look at and eerily cold to the touch, the viscous slime coating this prosthesis won’t harm you. Unless you can cast spells, that is. Then it will. Horribly.
+			</p>
+			
+			<p>
+				This item replaces a lost arm. While the prosthetic is attached, it functions identically to the part it replaces. 
+				You can detach or reattach it as an action, and it can’t be removed against your will. It detaches if you die.
+			</p>
+			
+			<p>
+				As a bonus action, you can cause this prosthesis to emit dim light in a <strong>10-foot radius</strong> or extinguish the light.
+			</p>
+			
+			<p>
+				<strong>Prosthesis Properties.</strong> This prosthesis can enhance or replace an arm. It has the Melee (1d6 slashing, Pugilist) property and the Hamstring Superior Strike.
+			</p>
+			
+			<p>
+				<strong>Arcanovore.</strong>
+					You have <strong>advantage</strong> on ability checks made to grapple creatures capable of casting one or more spells using this prosthesis, and while grappling one, you can use an action to drain some of its magical power. 
+					The creature loses a 1st-level spell slot, or it loses one daily use of a random 1st-level spell. This magic is stored in the prosthesis, and while it contains stored magic, it can’t be used to drain more. 
+					As an action while the prosthesis contains stored magic, you can touch a creature with it and expend the stored magic, causing the creature to regain an expended spell slot of equal level to the spell slot or spell that was stored within. 
+					Once this property has been used, roll a <strong>d6</strong>. On a roll of <strong>2</strong> or lower, it can’t be used again until the next dawn.
+			</p>
+			
+			<p>
+				<strong>Greatsword (2d6, Property +1).</strong> The prosthesis is a martial melee weapon.
+				If you’re proficient with a martial melee weapon, you’re considered proficient with this weapon.
+				The information in parentheses notes the weapon’s damage dice, damage type, and any additional weapon properties it may have, respectively.
+			</p>
+			
+			<p>
+				<strong>Pugilist.</strong> For creatures that roll a die when they make unarmed strikes (such as the monk), 
+				the size of their damage die is increased by one (maximum 1d12) when they make unarmed strikes with a hand equipped with a weapon that has this property.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"/>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">15 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
 	</element>
 	
 </elements>

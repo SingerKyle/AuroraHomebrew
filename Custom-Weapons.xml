@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.15">
+		<update version="0.0.16">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -166,5 +166,30 @@
 		</setters>
 	</element>
 
+	<element name="Verity" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_VERITY">
+		<description>
+			<p>
+				Shimmering with ethereal moonlight, the flames that wreath this blade have no heat to them, burning falsehoods instead of flesh. Don’t let the cold glow fool you, though. The truth can hurt more than the hottest fire.
+				<br/>
+				This item has <strong>1d4</strong> charges and regains <strong>1d4</strong> expended charges daily at dawn.
+				<br/>
+				<strong>Spells.</strong> While this weapon is on your person, you can expend 1 or more of its charges to cast one of the following spells from it (save DC 13): faerie fire (1 charge), moonbeam (2 charges), or zone of truth (2 charges).
+				<br/>
+				<strong>Revealing Light.</strong> When you hit a creature with this weapon on your turn, you can expend up to 2 charges to envelop the creature in ethereal flames. 
+				If you do, any illusion and transmutation spells that the creature is concentrating on or affected by immediately end, 
+				provided they are of a level equal to or lower than the number of charges expended.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Sword, rapier</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="Weapon">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Rapier </set>
+			<set name="proficiency">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+		</setters>
+	</element>
 	
 </elements>
