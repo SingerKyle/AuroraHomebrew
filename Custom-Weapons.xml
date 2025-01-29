@@ -187,6 +187,7 @@
 			<set name="rarity">Uncommon</set>
 			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
+			<set name="cost" currency="gp">2650</set>
 			<set name="weapon">Rapier </set>
 			<set name="proficiency">ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
 		</setters>
@@ -228,6 +229,7 @@
 			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">2500</set>
 			<set name="weapon">Javelin</set>
 		</setters>
 	</element>
