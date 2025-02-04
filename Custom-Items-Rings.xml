@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<info>
+		<name>Rings</name>
+		<description/>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="items-rings.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-rings.xml"/>
+		</update>
+	</info>
+	
+	
+	<element name="Ring of Time Jump" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_RING_TIME_JUMP">
+		<description>
+			<p>
+				Once per day (no action required), you can choose to temporarily speed up your traversal through time. When you complete your turn, you immediately get another turn.
+				At the beginning of your turn next round, you become paralyzed as your body returns to its proper place in the space-time continuum. This ability refreshes after you
+				complete a long rest.
+			</p>
+			
+			<p>
+				Netherese Arcanists long sought mastery over time.
+				Delving deep into the overlap between time and magic’s ability to twist and modify it, they sought to amplify their power by slowing the passage for everyone else.
+				Their experiments didn’t quite bear the fruit they hoped, but they did develop a ring that could be used in dire circumstances. 
+				Sometimes you didn’t need to accomplish much, and just having that one extra action could be enough to tip the tides. 
+				It would have to be because they haven’t overcome the major drawback of being paralyzed as the world catches up to you.
+				</p>
+			<p>
+				<em>
+					Catching the hydra with a lucky blow, T.A.R.I.S. sliced right through the neck, cleaving the head off completely. Realizing this, he quickly activated his ring, shoving the torch directly toward the wound. 
+					Unfortunately, he missed. His body paralyzed, he helplessly watched two heads sprout from the neck stump. All six heads pivoted, focusing on him in his paralyzed state as the hydra moved in for the attack.
+				</em>
+			</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="slot">ring</set>
+			<set name="cost" currency="gp">3750</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Trade" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_RING_TRADE">
+		<description>
+			<p>
+				Once per day, this ring can be activated over the course of a minute to summon a random merchant chosen by the GM to an unoccupied space adjacent to you. 
+				The merchant’s wares, tools, building, if they have one, and any other items they regularly use for business come with them.
+			</p>
+			
+			<p>
+				If there isn’t space for everything, they and their possessions will appear in the closest unoccupied space with which everything fits. 
+				They stay for 1 hour, after which they return to their prior location along with their possessions. 
+				If you traded with the merchant, any items you purchased or sold stay with the new owner. 
+				If either party attempts to steal, cheat, or otherwise cause harm to the other party, the ring immediately severs the connection.
+			</p>
+			
+			<p>
+				The merchant and their belongings are transported to their prior location. 
+				The party acting in bad faith must immediately roll on the convergence table.
+			</p>
+			
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+</elements>

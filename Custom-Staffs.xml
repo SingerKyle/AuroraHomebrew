@@ -26,12 +26,12 @@
 		<setters>
 			<set name="keywords">Sorcerer</set>
 			<set name="category">Staffs</set>
-			<set name="cost" currency="gp">0</set>
+			<set name="cost" currency="gp">10000</set>
 			<set name="weight" lb="4">4 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="weapon">Quarterstaff</set>
 			<set name="type">Staff</set>
-			<set name="attunement">false</set>
+			<set name="attunement">true</set>
 			<set name="rarity">Very Rare</set>
 		</setters>
 	</element>
@@ -56,6 +56,43 @@
 			<set name="attunement">false</set>
 			<set name="weapon">Quarterstaff</set>
 			<set name="proficiency">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</set>
+		</setters>
+	</element>
+
+	<element name="Staff of Command" type="Magic Item" source="Wardens of Faerûn" id="ID_WOF_MOURNING_FROST">
+		<description>
+			<p>
+				The attuned staff can be used as a spellcasting focus while being held, providing a +1 bonus to attack rolls and the saving throw DCs of your cantrips.
+			</p>
+
+			<p class="indent">
+				In addition, when a summoner is attuned to this staff, the limit to the number of creatures they can control is increased by the staff’s bonus.
+			</p>
+
+			<p><strong>Rare Variant.</strong> The staff provides a +2 bonus to attack rolls and the saving throw DCs of your cantrips.</p>
+
+			<p>
+				<strong>Very Rare Variant.</strong> 
+				The staff provides a +3 bonus to attack rolls and the saving throw DCs of your cantrips.
+			</p>
+			
+			<p>
+				<strong>Legendary Variant.</strong> 
+				The staff provides a +3 bonus to attack rolls and the saving throw DCs of your cantrips. 
+				In addition, summons add the staff’s bonus to their damage rolls.
+			</p>
+			
+		</description>
+		<setters>
+			<set name="keywords">Sorcerer</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">550</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
 		</setters>
 	</element>
 	

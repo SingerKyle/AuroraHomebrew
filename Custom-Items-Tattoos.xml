@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<info>
+		<name>Rings</name>
+		<description/>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="items-rings.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-rings.xml"/>
+		</update>
+	</info>
+
+	<element name="Tome of Death Defiance Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_ACID">
+		<description>
+			<p>
+				When you open this tome, a complex series of images revolve around you, showing in precise detail how to apply the arcane glyphs for the death defiance tattoo. 
+				250 gp worth of rare inks, which are consumed, will need to be tattooed onto a creature over the course of an hour following the tomes guided instructions. 
+				At the end of the hour, the creature is attuned to the magical tattoo. 
+				The tattoo can be applied to one creatures. 
+				Each time the tattoo is applied, the rare inks are consumed. 
+				If a creature does not have the tome, they are unable to create the tattoo, even if they have done so before.
+			</p>
+			
+			<p class="indent">
+				Once attuned to the tattoo, if you die from a cause other than old age, your shadow gains a semblance of your sentience and the statistics of a shadow which you control on your turn. 
+				It lasts until it drops to 0 hit points, it reduces a hostile creature to 0 hit points, or 1 minute has passed. 
+				If the shadow reduces a hostile creature to 0 hit points that is small or larger, the shadow acts as a conduit siphoning the slain creature’s life force, 
+				returning you to life with 1 hit point, and your shadow reverts to its previous state. 
+				You do not have any missing body parts restored. You are incapacitated until the beginning of your next turn. The shadow has additional hit points equal to twice your level, 
+				and its attack and damage rolls gain an additional modifier equal to your proficiency bonus. 
+				Once you have used this ability, you are unable to do so again until you have completed 1d4 long rests.
+			</p>
+			
+			<p class="indent">
+				If your attunement to the tattoo ends, the tattoo remains, but loses all magical properties.
+				To regain the magical effects, you need to reapply the rare inks according to the tome’s instructions and reestablish attunement.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">626</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			
+		</rules>
+	</element>
+	
+	<!--
+	
+	<element name="Absorbing Tattoo, Acid" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_ACID">
+<description>
+<p>Produced by a special needle, this magic tattoo features designs that emphasize green.</p>
+<p class="indent">
+<strong>
+<em>Tattoo Attunement.</em>
+</strong>
+To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.
+</p>
+<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+<p class="indent">
+<strong>
+<em>Damage Resistance.</em>
+</strong>
+While the tattoo is on your skin, you have resistance to acid damage.
+</p>
+<p class="indent">
+<strong>
+<em>Damage Absorption.</em>
+</strong>
+When you take acid damage, you can use your reaction to gain immunity against the acid damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.
+</p>
+</description>
+<setters>
+<set name="keywords">tattoo, acid, resistance</set>
+<set name="category">Wondrous Items</set>
+<set name="type">Tattoo</set>
+<set name="rarity">Very Rare</set>
+<set name="attunement">true</set>
+</setters>
+<rules>
+<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID"/>
+</rules>
+</element>
+	
+	-->
+	
+</elements>
