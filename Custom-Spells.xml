@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.21">
+		<update version="0.0.23">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -326,6 +326,39 @@
 		</setters>
 	</element>
 
+	<element name="Anchor Spirit" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_ANCHOR_SPIRIT">
+		<supports>Artificer, Bard, Cleric, Paladin</supports>
+		<description>
+			<p>
+				You drive the pin used in the spell’s casting into the ground, forcing a creature you can see within range to succeed on a Charisma saving throw or have 
+				its spirit shackled to an invisible spiritual anchor at a point in the creature’s space
+			</p>
+			<p class="indent">
+				At the end of each of that creature’s turns, it takes 1d6 Psychic damage for each 5 feet away from that anchor that it ends its turn (maximum 10d6).
+			</p>
+
+			<p>
+				This spell is said to be a remnant of Netherese spirit-binding techniques once used by <em>Archmage Malazar</em> in his arcane experiments. 
+				Designed to tether souls in place, it was a precursor to void-anchoring rituals. 
+			</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver pin worth 5+ SP, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 	<!--
 	
 	                                                           LEVEL 3
@@ -527,7 +560,141 @@
 		</setters>
 	</element>
 
-	
+	<element name="Aftershock" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_AFTERSHOCK">
+		<supports>Artificer, Druid, Ranger</supports>
+		<description>
+			<p>
+				The target’s impact echoes as a second shock slams it further into the ground. 
+				The target must make a constitution saving throw. On a failure the creature takes 3D8 Bludgeoning damage and has the dazed condition until the end of its turn.
+			</p>
+
+			<p>
+				<strong>At Higher Levels.</strong> 
+				The damage increases by 2d8 for every slot level above 3.
+			</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">3</set>
+			<set name="school">transmutation</set>
+			<set name="time">Reaction, which you can take when a target gains the prone condition</set>
+			<set name="duration">1 Round</set>
+			<set name="range">30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Amplifire Outburst" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_AMPLIFIRE">
+		<supports>Artificer, Druid, Ranger</supports>
+		<description>
+			<p>
+				You raise a hand and fire forth a crackling spark that ignites the air around it.
+			</p>
+			
+			<p class="indent">
+				Make a ranged spell attack. On a hit, the target takes 3d6 fire plus 3d8 Lightning damage.
+			</p>
+			
+			<p class="indent">
+				If this attack was made with advantage, the spark additionally explodes on a hit, forcing each other creature within 10 feet of the target to make a Dexterity saving throw.
+				On a failure, a creature takes half the attack’s damage.
+			</p>
+
+			<p>
+				Derived from the unstable energy experiments of <em>Archmage Malazar</em>, this spell was originally a Netherese weapon of war. 
+				Malazar sought to fuse opposing elemental forces, fire and lightning, into a single volatile magic. 
+				Though the Empire fell, remnants of his research persisted in arcane circles, warning of its destructive power.
+			</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">100 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a broken copper torus</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Awaken Bloodfire" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_BLOODFIRE">
+		<supports>Bard, Cleric, Sorcerer, Warlock</supports>
+		<description>
+			<p>
+				You quicken the blood of a creature within range; for the duration, the creature can make a melee weapon attack as a bonus action on each of its turns, 
+				and attacks that target it have advantage.
+			</p>
+
+			<p class="indent">
+				An unwilling creature targeted by this spell can make a Constitution saving throw, resisting the effect on a success
+			</p>
+
+			<p>
+				Legends tell of <em>Archmage Malazar</em> using a version of this spell on his own soldiers, granting them relentless vitality at the cost of their own safety. 
+				The spell fuels warriors with an unnatural hunger for battle, even as their bodies burned from within.
+			</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Blightning Strike" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_BLIGHTNING_STRIKE">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<p>
+				You call down a bolt of baleful red lightning from above a creature you can see within 120 feet. 
+				The creature must succeed on a Dexterity saving throw or take 14 (4d6) lightning plus 11 (2d10) Necrotic damage, 
+				or half as much on a success
+			</p>
+
+			<p class="indent">
+				A creature reduced to 0 Hit Points by this damage is unaffected by the first source of healing it receives before the beginning of its next turn.
+			</p>
+			
+			<p class="indent">
+				<strong>At Higher Levels.</strong>
+				When you cast this spell using a spell slot of Level 4 or higher, 
+				the Necrotic damage dealt by it increases by 1d10 for each slot level above 3.
+			</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	
 	<!--
 	

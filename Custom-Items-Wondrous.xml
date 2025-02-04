@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.14">
+		<update version="0.0.15">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -201,6 +201,27 @@
 			<set name="attunement" addition="by a Barbarian">true</set>
 			<set name="cost" currency="gp">1500</set>
 			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Revenant Mala" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_REVENANT_MALA">
+		<description>
+			<p>
+				A creature attuned to these blood-red prayer beads may not spend hit dice to recover HP. 
+				Instead, an attuned creature may spend one minute in meditation to heal themselves up to half their hit point maximum.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Barbarian, neck</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="15">20 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Prayer Beads</set>
+			<set name="attunement" addition="by a Barbarian">true</set>
+			<set name="cost" currency="gp">1500</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true by a creature who has died and been resurrected</set>
 		</setters>
 	</element>
 
