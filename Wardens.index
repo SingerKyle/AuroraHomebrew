@@ -6,7 +6,7 @@
 		The following are spells, items and other such things for my homebrew campaign. The Wardens of Faerûn, enjoy team.
 		</description>
 		<author url="https://github.com/SingerKyle/AuroraHomebrew">Eonkyle</author>
-		<update version="0.0.16">
+		<update version="0.0.17">
 			<file name="Wardens.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens.index" />
 		</update>
 	</info>
