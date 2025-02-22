@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.23">
+		<update version="0.0.24">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -168,6 +168,8 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	
+	
 
 	<!--
 	
@@ -176,7 +178,7 @@
 	-->
 
 	<element name="Malazar's Regenerating Ward" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_REGEN_WARD">
-		<supports>Artificer, Wizard</supports>
+		<supports>Artificer, Wizard, Cleric</supports>
 		<description>
 			<p>
 				Documented as being created by the Apprentice Malazar during the Crown Wars, 
@@ -302,7 +304,7 @@
 	</element>
 
 	<element name="Frozen Armament" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_FROZEN_WEAPON">
-		<supports>Artificer</supports>
+		<supports>Artificer, Sorcerer</supports>
 		<description>
 			<p>
 				You enchant the weapon you’re holding with frost magic. The weapon glows white, radiating a freezing mist. 
