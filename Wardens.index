@@ -24,6 +24,8 @@
         <file name="Custom-Potions.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Potions.xml" />
         <file name="Custom-Items-Rings.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items-Rings.xml" />
         <file name="Custom-Items-Tattoos.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items-Tattoos.xml" />
+        
+        <file name="Custom-Deities.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Deities.xml" />
 	
 	</files>
 </index>

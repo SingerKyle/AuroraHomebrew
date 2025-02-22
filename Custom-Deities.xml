@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<info>
+		<name>Deities</name>
+		<description>Deities from the Wardens of Faerûn.</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+		<update version="0.2">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/deities.xml"/>
+		</update>
+	</info>
+
+	<element name="The Aegis" type="Deity" source="Wardens of Faerûn" id="ID_WOF_DEITY_AEGIS">
+		<description>
+			<p class="flavor">Watcher of the Void, Guardian of Forgotten Paths, Keeper of Silent Echoes</p>
+		</description>
+		<setters>
+			<set name="setting">Forgotten Realms</set>
+			<set name="alignment">TN</set>
+			<set name="domains">Knowledge, Tempest, Grave, Twilight</set>
+			<set name="symbol">An eye encircled by jagged, interwoven lines forming an incomplete ring.</set>
+			<set name="gender">androgynous</set>
+		</setters>
+		<sheet>
+			<description>Veiled guardian of lost wisdom and the silent storm</description>
+		</sheet>
+	</element>
+	
+</elements>
