@@ -74,5 +74,27 @@
 			<set name="attunement">true</set>
 		</setters>
 	</element>
+
+	<element name="Timekeeper's Ring" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_RING_TRADE">
+		<description>
+			<p>
+				Ring worn by the Timekeeper Yarrin. It looks to be forged with silver and contains a gemstone that holds an iridescent vortex.
+			</p>
+
+			<p>
+				Ring can only be put on or taken off during a long rest. Once per long rest, health can be provided to any one player, up to their max HP.
+			</p>
+
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Rare</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">ring</set>
+			<set name="equippable">true</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
 	
 </elements>
