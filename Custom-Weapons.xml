@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.16">
+		<update version="0.0.17">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -128,6 +128,7 @@
 				<strong>Manticore's Fury:</strong> When you make a ranged attack with this crossbow, you can activate the Manticore’s Fury ability. 
 				You may expend one of three charges to unleash a flurry of spectral spikes alongside the bolt. 
 				If the attack hits, it deals an additional 2d6 piercing damage, as ghostly spines strike the target.
+				You regain 1D3 charges on a long rest
 			</p>
 			<br/>
 			<p>
