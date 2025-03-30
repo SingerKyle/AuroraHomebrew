@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.24">
+		<update version="0.0.25">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -308,8 +308,13 @@
 		<description>
 			<p>
 				You enchant the weapon you’re holding with frost magic. The weapon glows white, radiating a freezing mist. 
-				The first time on your turn that you hit with the enchanted weapon, you deal an extra 1d8 cold damage
+				The first time on each of your turns that you hit with the enchanted weapon, you deal an extra 1d8 cold damage
 			</p>
+
+			<p>
+				<strong>At Higher Levels.</strong> When cast using a spell slot of 3rd level or higher, the damage dealt increases by 1D8 for each slot level above 2nd.
+			</p>
+			
 
 		</description>
 		<setters>
@@ -317,13 +322,13 @@
 			<set name="level">2</set>
 			<set name="school">transmutation</set>
 			<set name="time">1 action</set>
-			<set name="duration">Instantaneous</set>
+			<set name="duration">Concentration, up to 1 minute</set>
 			<set name="range">Touch</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"/>
-			<set name="isConcentration">false</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
