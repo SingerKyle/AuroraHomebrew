@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.25">
+		<update version="0.0.26">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -372,6 +372,44 @@
 	
 	-->
 
+	<element name="Bubble Barrier" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_BUBBLE_BARRIER">
+		<supports>Sorcerer, Wizard, Cleric, Artificer</supports>
+		<description>
+			<p>
+				You create a large, translucent bubble that envelops you.
+				While inside the bubble, you hover 5 feet above the groundand you can hover around at a speed of 20 feet.
+			</p>
+
+			<p>
+				The bubble provides you with protection, giving you a +2 bonus to AC. Additionally, 
+				the next ranged attack or melee attack that would hit you has disadvantage, 
+				if the attack requires a saving throw you have advantage on the roll. 
+				When the concentration or spell ends, the bubble will pop and you fall prone.
+			</p>
+			
+			<p>
+				<em>
+					"Sphere of safety, rise and float.
+					Protect and carry, this I devote."
+				</em>
+			</p>
+
+		</description>
+		<setters>
+			<set name="keywords">cold</set>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 	<element name="Artic Aegis" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_ARTICAEGIS">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
@@ -709,12 +747,39 @@
 	
 	-->
 
+	<element name="Rejuvinated Starlight" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_STARLIGHT">
+		<supports>Cleric, Druid, Paladin</supports>
+		<description>
+			<p>
+				Dazzling starlight rains down from above. Up to three creatures of your choice within range regain hit points equal to 1D6 + your spellcasting ability modifier.
+				<br>Additionally, the creatures gain temporary hit points equal to your spellcasting abilitiy modifier.</br>
+			</p>
+
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 5th level or higher, the number of creatures that can be affected increases by 1.</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">instantaneous</set>
+			<set name="range">50 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 	<element name="Void Weapon" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_LIGHT_LOAD">
 		<supports>Artificer</supports>
 		<description>
 			<p>
 				You touch a weapon and imbue it with a dark hunger from the void. 
-				Until the spell ends, weapon attacks made with it deal an extra 1d8 necrotic damage on a hit, the amount of necrotic damage on the roll will be given to the weapon's wielder as temporary hit points.
+				Until the spell ends, weapon attacks made with it deal an extra 1d8 necrotic damage on a hit, the amount of necrotic damage on the roll will be given to the weapon's wielder as temporary hit points. 
+				Temporary hit points from this do not stack.
 				If the weapon isn’t already a magic weapon, it becomes one for the duration.
 			</p>
 
@@ -779,6 +844,33 @@
 		</setters>
 	</element>
 
+	<element name="Holy Inferno" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_HOLY_INFERNO">
+		<supports>Paladin, Cleric</supports>
+		<description>
+			<p>
+				A beam of iridescent blue fire forming a line 60 foot long and 5 foot wide blasts out from you in a direction you choose. 
+				Each creature in the line must make a dexterity saving throw. A creature takes 4D8 Radiant Damage OR Fire damage on a failed save, or half as much on a successful one.
+			</p>
+
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 5th level or higher, you may deal an extra 1d8 damage per damage type.</p>
+
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 foot Line</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A Holy Symbol</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
 	<!--
 	
 	                                                           LEVEL 5
@@ -811,4 +903,20 @@
 		</setters>
 	</element>
 
+	<!--
+	
+	                                                           LEVEL 6
+	
+	-->
+
+
+
+	<!--
+	
+	                                                           LEVEL 7
+	
+	-->
+	
+	
+	
 </elements>

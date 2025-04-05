@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.20">
+		<update version="0.0.21">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -241,6 +241,46 @@
 		</setters>
 	</element>
 
+	<element name="Winter Wolf Hide" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_WINTER_HIDE">
+		<description>
+			<p>
+				This thick, magically preserved hide is taken from a powerful Winter Wolf.
+				The hide seems to subtly shift and ripple, as if the spirit of the wolf still stirs within it.
+				It retains a chilling aura and a faint, wild scent. When you attune to this hide it conforms to fit over your armour, granting the following benefits:
+			</p>
+
+			<p class="indent">
+				<strong>Cold Resistance.</strong> You gain resistance to cold damage.
+			</p>
+
+			<p class="indent">
+				<strong>Snow Camouflage.</strong> While in snowy terrain, you gain advantage on Dexterity (Stealth) checks made to hide.
+			</p>
+
+			<p class="indent">
+				<strong>Keen Senses</strong> You gain advantage on Wisdom (Perception) checks that rely on hearing or smell.
+			</p>
+
+			<p class="indent">
+				<strong>Winter's Fury</strong> When you make a melee weapon attack, you can use a bonus action to unleash a blast of freezing wind. If the attack hits, the target takes an additional 4D6 cold damage.
+				Additionally, a 15-foot cone of freezing wind erupts from the target's space.
+				All other creatures within the cone, except the target, must make a DC 14 Dexterity saving throw. On a failure, a creature takes 4D6 cold damage.
+				<br> If the initial attack misses, the target must make the DC 14 Dexterity saving throw as well, taking 4D6 cold damage on a failed save.</br>
+				<br>Once you used this feature, you can't use it again until you finish a long rest.</br>
+			</p>
+
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium exotic fateweaver">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="attunement" addition="by a fighter or barbarian">true </set>
+		</setters>
+	</element>
+
 	<element name="Fragment of Moonlight" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_MOONLIT_FRAGMENT">
 		<description>
 			<p>
@@ -256,6 +296,140 @@
 			<set name="cost" currency="gp">1500</set>
 			<set name="rarity">Rare</set>
 			<set name="attunement" addition="">false </set>
+		</setters>
+	</element>
+
+	<element name="Stormstride Boots" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_STORM_BOOTS">
+		<description>
+			<p>
+				These sleek boots, fashioned from cobalt-tinted leather and adorned with faintly glowing streaks of blue, 
+				have been irrevocably transformed by their long residence in an unknown Arcanist's citadel, the Stormspire
+				Over a century and a half the Citadel's crackling aura of storm magic seeped into the leather, infusing the boots with raw elemental power.
+				Now the air around them hums faintly with static electricity, and their soles leave faint scorch marks on the ground when worn by an attuned creature, 
+				as if the wearer carries a piece of the storm wherever they go.
+			</p>
+			
+			<p class="indent">
+				<strong>Charged.</strong> These boots have 3 charges, and they regain 1D3 expended charges at dawn. You can expend a charge to use one of the following features:
+				<list>
+					<strong>Stride the Lightning.</strong> When you cast a spell that deals thunder or lightning damage, you can entwine yourself into the spell's power as a bonus action. 
+					You teleport to an unoccupied space either within the spell's area of effect or adjacent to the spell's target.
+				</list>
+				<list>
+					<strong>Bolt Dash.</strong> You can take the dash action as a bonus action. At the end of your turn if you took the bolt dash ability, creatures of your choice within 30 feet must make a DC 14 wisdom saving throw. 
+					On a failed save, a creature takes 3D8 thunder damage. On a success, they take half as much damage.
+				</list>
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Cleric, Magic</set>
+			<set name="category">Wondrous Items</set>
+			<set name="slot">feet</set>
+			<set name="cost" currency="gp">2500</set>
+			<set name="weight" lb="15">7 lb.</set>
+			<set name="type">Boots</set>
+			<set name="cost" currency="gp">1500</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a spellcaster meditating in a thunderstorm">true </set>
+		</setters>
+	</element>
+
+	<element name="Mist" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_MIST">
+		<description>
+			<p>
+				This coat seems to be held together by crystalline formations across the seams. It eminates a mystical, protective fog. It has 3 charges that are regained every day at dawn.
+			</p>
+			
+			<p class="indent">
+				<strong>Wilful Mist.</strong> Mist gathers around you, created by your presence: you can add your Charisma modifier to Dexterity (Stealth) checks while wearing the coat. 
+				Additionally you can use an action to expend 2 charges to let your body partially dissolve into mist, raising your AC by 2 for 1 minute.
+			</p>
+			
+			<p class="indent">
+				<strong>Blinding Presence.</strong> You can use an action and expend 1 charge to send a plume of mist to hinder a foe: 
+				they must make a Dexterity saving throw or be blinded until the end of their next turn, when the plume dissipates.
+				The save DC is equal to 8 + your proficiency bonus + your charisma modifier.
+			</p>
+			
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">1250</set>
+			<set name="weight" lb="10">10 lb</set>
+			<set name="slot">body</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Amethyst of Regeneration" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_REGEN_AMETHYST">
+		<description>
+			<p>
+				A necklace with a single large and magical amethyst. 
+				Once per short rest, when the wearer takes damage, they can use their reaction to heal themselves for 1D8 + 2 and get temporary hit points equal to half the amount rolled to heal.
+			</p>
+
+			<p class="indent">
+				<em>"As the battle rages on, Taris was barely able to stand, his armour dented and bloodied, but with one hand clutching the amethyst around their neck, 
+					they manage to summon the strength to heal their wounds and continue the fight."</em> Recollection of the crown wars by Archmage Malazar.
+			</p>
+
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">3500</set>
+			<set name="weight" lb="5">5 lb</set>
+			<set name="slot">neck</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
+	<element name="Malazar's Tome of Constellations" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_MALSTAR_TOME">
+		<description>
+			<p>
+				This elegant tome has maps of constellations and corresponding poems about them. The Tome of Constellations is enchanted by one <em>Apprentice Malazar.</em>
+				The tome allows the attuned user to cast the spell Guiding Bolt once per day. 
+				Additionally, they have advantage on Wisdom (Survival) checks made to navigate outdoors at night.
+			</p>
+
+			<p class="indent">
+				While holding the tome, the user can use an actions to speak the name of a constellation listed below, revealing a starry image of the constellation in the air. 
+				You can only use one of the listed effects once per day.
+			</p>
+			
+			<p class ="indent">
+				<list>
+				<strong>Aureon's Guiding Sigil.</strong> While holding the tome, the user can use an action to summon Aureon's Sigil that hangs above them for 1 minute, illuminating 30 feet around the user. 
+					You gain advantage on saving throws against magical effects and any radiant damage dealt by your cleric spells gain an extra 1D6 damage during this time.
+				</list>
+			</p>
+
+			<p class ="indent">
+				<list>
+					<strong>Ilmater's Healing Swan.</strong> While holding the tome, the user can use an action to summon a spectral Swan for 1 minute. 
+					The swan sings a soothing melody, causing all allies within 30ft are cured of non magic diseases or conditions. Additionally, they regain 1d6 points of health until the swan disappears.
+				</list>
+			</p>
+
+			<p class ="indent">
+				<list>
+					<strong>Moradin's Steadfast Anvil.</strong> While holding the tome, the user can use an action to summon a spectral anvil for 1 minute.
+					You gain temporary hit points equal to your level and for the next minute you gain advantage on saving throws against being frightened or charmed.
+				</list>
+			</p>
+
+			<p class ="indent">
+				<list>
+					<strong>Mystryl's Enchanted Pheonix.</strong> While holding the tome, the user can use an action to summon a spectral Pheonix which streaks upwards into the air before diving to a target you can see. 
+					The pheonix explodes in a burst of enchanted flame in a 5-foot radius. The targets make a DC 14 Dexterity saving throw, on a failure they take 3D6 fire damage or half as much on a success.
+				</list>
+			</p>
+
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">3500</set>
+			<set name="weight" lb="5">5 lb</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 
