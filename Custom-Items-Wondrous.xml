@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.22">
+		<update version="0.0.23">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -24,6 +24,19 @@
 			<set name="weight" lb="0">—</set>
 			<set name="container">Holy Symbol</set>
 			<set name="slot">onehand</set>
+		</setters>
+	</element>
+
+	<element name="Veteran’s Cane" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_VETERAN_CANE">
+		<description>
+			<p>When you grasp this intricately carved Dwarven walking cane and use a bonus action to speak the command word, it transforms into an ordinary shortsword. Speaking this command word again converts it back into a cane</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">118</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
 

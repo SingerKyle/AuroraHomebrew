@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.26">
+		<update version="0.0.27">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -117,6 +117,8 @@
 	                                                           LEVEL 1
 	
 	-->
+	
+	
 	
 	<element name="Magic Tool" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_MAGIC_TOOL">
 		<supports>Artificer, Wizard</supports>
@@ -371,6 +373,36 @@
 	                                                           LEVEL 3
 	
 	-->
+
+	<!--<element name="Reflect Force" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_REFLECT_FORCE">
+		<supports>Sorcerer, Wizard, Cleric, Artificer</supports>
+		<description>
+			<p>
+				
+			</p>
+
+			<p>
+				<em>
+					"Sphere of safety, rise and float.
+					Protect and carry, this I devote."
+				</em>
+			</p>
+
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reaction</set>
+			<set name="duration">10 minutes, concentration</set>
+			<set name="range">Self (30 ft radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A polished onyx disk worth 25 GP</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>-->
 
 	<element name="Bubble Barrier" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_BUBBLE_BARRIER">
 		<supports>Sorcerer, Wizard, Cleric, Artificer</supports>
