@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.13">
+		<update version="0.0.14">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-staffs.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 			
 			<p><indent><strong>Heart of Ice:</strong> When dealing cold damage, the wielder deals an additional <em>1 Cold Damage.</em></indent></p>
 
-			<p><indent><strong>Insidious Cold:</strong> Upon dealing cold damage, the creature will roll a D4. On a 2 or lower the creature is <em>Chilled</em>, resulting in double cold damage dealt to the target.</indent></p>
+			<p><indent><strong>Insidious Cold:</strong> Upon dealing cold damage, the creature must beat or beat a DC12 CON save or become <em>Chilled</em>, resulting in double cold damage dealt to the target.</indent></p>
 			
 		</description>
 		<setters>
@@ -33,6 +33,36 @@
 			<set name="type">Staff</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Staff of Lesser Frost" type="Magic Item" source="Wardens of Faerûn" id="ID_WOF_FROST_STAFF">
+		<description>
+			<p>
+				This jagged staff, carved from the remains of Cryovain the white dragon, radiates a chilling power. 
+				Cold mist clings to its form, and frost whispers around its presence.
+			</p>
+
+			<p><indent>You have resistance to cold damage while you hold this staff.</indent></p>
+
+			<p><indent>The staff has 5 charges. While holding it, you can expend 1 or more of its charges to cast the following spells (using your spell save DC):</indent></p>
+			<p><indent><bullet>Fog Cloud (1 charge)</bullet></indent></p>
+			<p><indent><bullet>Ice Knife (1 charge)</bullet></indent></p>
+			<p><indent><bullet>Ice Storm (3 charges)</bullet></indent></p>
+			
+			<p><indent>The staff regains 1d4 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff shatters into icy shards and is destroyed.</indent></p>
+			
+		</description>
+		<setters>
+			<set name="keywords">Sorcerer</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">6000</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a druid, sorcerer, warlock, or wizard">true</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 
