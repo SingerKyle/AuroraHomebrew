@@ -89,7 +89,7 @@
 		</setters>
 	</element>
 
-	<element name="Staff of Command" type="Magic Item" source="Wardens of Faerûn" id="ID_WOF_MOURNING_FROST">
+	<element name="Staff of Command" type="Magic Item" source="Wardens of Faerûn" id="ID_WOF_STAFF_COMMAND">
 		<description>
 			<p>
 				The attuned staff can be used as a spellcasting focus while being held, providing a +1 bonus to attack rolls and the saving throw DCs of your cantrips.
