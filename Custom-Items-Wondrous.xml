@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.23">
+		<update version="0.0.24">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -104,6 +104,31 @@
 		</setters>
 	</element>
 
+	<element name="Scroll of Forbidden Recursions" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_RECURSION">
+		<description>
+			<p>
+				An old scroll from the Great Library, written in a tangled recursion of Draconic and Celestial.
+			</p>
+			<br/>
+			<p>
+				<list>
+					<li>When read aloud, the reader casts counterspell, dispel magic, or identify at 6th level, chosen at the time of reading.</li>
+					<li>After use, the scroll disappears and the reader must make a DC 15 Wisdom save or suffer short-term madness for 1 minute, whispering truths they cannot comprehend.</li>
+				</list>
+			</p>
+
+		</description>
+		<setters>
+			<set name="keywords">scroll</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="15">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+
 	<element name="Bloodwell Vial" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_VIAL">
 		<description>
 			<p>
@@ -156,6 +181,44 @@
 			<set name="attunement">false</set>
 			<set name="rarity">Rare</set>
 		</setters>
+	</element>
+
+	<element name="Mantle of Avari" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_MANTLE_AVARI">
+		<description>
+			<p>
+				This midnight-blue cloak bears the embroidered symbol of Aureon subtly stitched into its lining, so faint it's barely visible unless caught in firelight.
+				The mantle once belonged to Master Avari, Tug’s former mentor, and was thought lost during the fall of the monastery. It is heavier than it appears, and its fabric occasionally shifts as though breathing.
+			</p>
+			<br/>
+			<p><b>While wearing this mantle, you gain the following benefits:</b></p>
+			<list>
+				<li>While wearing medium or heavy armor, your Armor Class increases by 1.</li>
+				<li>When a creature you can see targets you with a melee attack, you can use your reaction to cause the mantle to lash out, making a melee weapon attack against the attacker:<br/>
+					<b>+ WIS to hit, reach 10 ft., one target. Hit: 1d8 + your Wisdom modifier bludgeoning damage.</b><br/>
+					You can use this feature a number of times equal to your Wisdom modifier (minimum 1) per long rest.</li>
+				<li>If damage would reduce you to 0 hit points but not kill you outright, you are instead reduced to 1 hit point. 
+					The mantle flares with radiant energy as its threads bind your wounds, holding you together by sheer divine will.
+					Once this ability is used, it cannot be used again until you finish a long rest.</li>
+			</list>
+			<br/>
+			<p>
+				The cloak cannot speak, but can communicate emotionally with its wearer—warmth, tightness, vibrations, or a sense of direction during conflict.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">cloak, armor, radiant, reaction, reach</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">1250</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare (Cursed)</set>
+			<set name="requirements">Cleric or Paladin</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1"/>
+		</rules>
 	</element>
 
 	<element name="Gloves of the Manticore" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_MANTI_GLOVES">
