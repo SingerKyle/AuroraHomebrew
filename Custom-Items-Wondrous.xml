@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.24">
+		<update version="0.0.25">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -273,6 +273,34 @@
 		</rules>
 	</element>
 
+	<element name="Cloak of the Netherking" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_NETHER_CLOAK">
+		<description>
+			<p>
+				The mantle is made of shimmering violet threads that shift like liquid silk, with fractured sigils glowing faintly along its hems. 
+				When worn by Taris the robe’s fragments coil around his frame like an incomplete cocoon; regal yet broken, like its master’s legacy.
+			</p>
+			<br/>
+			<p>
+				Your weapon attacks that deal slashing damage score a critical hit on a roll of 19 or 20 on the d20.
+			</p>
+			<br/>
+			<p>
+				When you trigger a Wild Magic Surge, you may roll twice and choose either result.
+			</p>
+
+		</description>
+		<setters>
+			<set name="keywords">cloak, armor</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">1900</set>
+			<set name="weight" lb="15">10 lb.</set>
+			<set name="slot">shoulders</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
 	<element name="Earth-Crusher Boots" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_EARTH_BOOTS">
 		<description>
 			<p>
@@ -315,6 +343,28 @@
 			<set name="rarity">Rare</set>
 			<set name="attunement" addition="by a creature who has died and been resurrected">true </set>
 		</setters>
+	</element>
+
+	<element name="Aureonic Garb" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_AUREON_GARB">
+		<description>
+			<p>
+				These robes are white with golden inlays along its seams. It shines with a divine light when worn by a true follower of Aureon
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">Barbarian, neck</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="15">20 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Prayer Beads</set>
+			<set name="cost" currency="gp">1500</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a creature who has died and been resurrected">true </set>
+		</setters>
+		<rules>
+			<stat name="wisdom:score:add" value="1" bonus="base" />
+		</rules>
 	</element>
 
 	<element name="Winter Wolf Hide" type="Magic Item" source="Wardens of Faerûn" id="ID_CUSTOM_WINTER_HIDE">
@@ -469,13 +519,13 @@
 
 			<p class="indent">
 				While holding the tome, the user can use an actions to speak the name of a constellation listed below, revealing a starry image of the constellation in the air. 
-				You can only use one of the listed effects once per day.
+				You can only use one of the listed spells per short rest.
 			</p>
 			
 			<p class ="indent">
 				<list>
 				<strong>Aureon's Guiding Sigil.</strong> While holding the tome, the user can use an action to summon Aureon's Sigil that hangs above them for 1 minute, illuminating 30 feet around the user. 
-					You gain advantage on saving throws against magical effects and any radiant damage dealt by your cleric spells gain an extra 1D6 damage during this time.
+					You gain advantage on saving throws against magical effects and any radiant damage dealt by you gain an extra 1D6 damage during this time.
 				</list>
 			</p>
 
@@ -496,7 +546,7 @@
 			<p class ="indent">
 				<list>
 					<strong>Mystryl's Enchanted Pheonix.</strong> While holding the tome, the user can use an action to summon a spectral Pheonix which streaks upwards into the air before diving to a target you can see. 
-					The pheonix explodes in a burst of enchanted flame in a 5-foot radius. The targets make a DC 14 Dexterity saving throw, on a failure they take 3D6 fire damage or half as much on a success.
+					The pheonix explodes in a burst of enchanted flame in a 10-foot radius. The targets make a DC 14 Dexterity saving throw, on a failure they take 6D6 fire damage or half as much on a success.
 				</list>
 			</p>
 
