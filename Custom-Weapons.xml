@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.22">
+		<update version="0.0.23">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -296,7 +296,7 @@
 		<setters>
 			<set name="keywords">Crossbow</set>
 			<set name="category">Magic Weapons</set>
-			<set name="type" addition="Crossbow">Weapon</set>
+			<set name="type" addition="Crossbow, Light">Weapon</set>
 			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
@@ -318,7 +318,12 @@
 			<p>
 				<strong>Divine Rebuke (2/day):</strong>
 				<list>
-					<li>You and allies within 10 ft have advantage against being frightened.</li>
+					<li>
+						For 1 minute, add +1d6 cold to every hit.
+					</li>
+					<li>
+						First creature struck must make a CHA save or be banished to a harmless demiplane of frozen starlight until the end of your next turn.
+					</li>
 				</list>
 
 			</p>
@@ -326,19 +331,19 @@
 			<p>
 				<strong>Warmth of the Dawn.</strong> After hitting a target, you can trigger frost vents:
 				<list>
-					<li>Once per short rest, you can channel a spell into the bow. The next hit delivers the spell as if the creature is hit by a spell-storing item. This weapon can only hold one spell at a time.</li>
+					<li>You and allies within 10 ft have advantage against being frightened.</li>
 				</list>
 			</p>
 		</description>
 		<setters>
 			<set name="keywords">Crossbow</set>
 			<set name="category">Magic Weapons</set>
-			<set name="type" addition="longsword">Weapon</set>
+			<set name="type" addition="Longsword">Weapon</set>
 			<set name="enhancement">1</set>
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="cost" currency="gp">2500</set>
-			<set name="weapon">Crossbow</set>
+			<set name="weapon">Longsword</set>
 		</setters>
 	</element>
 	
