@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.23">
+		<update version="0.0.24">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -301,7 +301,7 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="cost" currency="gp">2500</set>
-			<set name="weapon">Crossbow</set>
+			<set name="weapon">Crossbow, Light</set>
 		</setters>
 	</element>
 
