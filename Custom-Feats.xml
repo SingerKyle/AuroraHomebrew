@@ -4,48 +4,11 @@
 		<name>Homebrew Feats</name>
 		<description>Feats from the Wardens of Faerûn.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1">
+		<update version="0.1.1">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
-
-	<element name="Actor" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ACTOR">
-		<description>
-			<p>Skilled at mimicry and dramatics, you gain the following benefits</p>
-			<ul>
-				<li>Increase your Charisma score by 1, to a maximum of 20.</li>
-				<li>You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.</li>
-				<li>You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>You have advantage on Deception and Performance checks when trying to pass yourself off as a different person.
-			You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Insight check contested by your Deception check allows a listener to determine that the effect is faked.</description>
-		</sheet>
-		<rules>
-			<stat name="charisma" value="1" />
-		</rules>
-	</element>
-	<element name="Athlete" type="Feat" source="Player’s Handbook" id="ID_PHB_FEAT_ATHLETE">
-		<description>
-			<p>You have undergone extensive physical training to gain the following benefits:</p>
-			<ul>
-				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
-				<li>When you are prone, standing up uses only 5 feet of your movement.</li>
-				<li>Climbing doesn’t cost you extra movement.</li>
-				<li>You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>When you are prone, standing up uses only 5 feet of your movement.
-			Climbing doesn’t cost you extra movement.
-			You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.</description>
-		</sheet>
-		<rules>
-			<select type="Ability Score Improvement" name="Athlete" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
-		</rules>
-	</element>
-
+	
 	<element name="Colossal Strength" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_COL_STRENGTH">
 		<description>
 			<p>Your strength and training allow you to use weapons that would be outsized for others. You gain the following benefits:</p>
@@ -62,9 +25,7 @@
 		</description>
 		<sheet>
 		</sheet>
-		<prerequisite>
-			<ability score="ID_PHB_ABILITY_STRENGTH" minimum="17" />
-		</prerequisite>
+		<prerequisite>"At least 17 Strength"</prerequisite>
 	</element>
 	
 </elements>
