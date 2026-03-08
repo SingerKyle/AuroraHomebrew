@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.27">
+		<update version="0.0.28">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -178,6 +178,105 @@
 	                                                           LEVEL 2
 	
 	-->
+
+	<element name="Banner of Bravery" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_BANNER_BRAVERY">
+		<supports>Paladin</supports>
+		<description>
+			<p>As you raise one of your free hands, a magical banner appears in it. The banner counts as a spear except it doesn't have the thrown property
+				(You can use it as a weapon for melee attacks and it qualifies for every trait that a spear would qualify for).
+			</p>
+
+			<p>
+				In addition, for the duration, as long as you wield the banner, each friendly creature within 30 feet of you that can see the banner have advantage against being frightened. 
+				If its hit points should hit 0, that friendly creature doesn't fall unconscious. Instead, it can continue to fight as normal but it must roll a death save at the end of their turn 
+				and every time it takes damage. The first time it fails a death saving throw or ends it turn more than 30ft away from you, it falls unconscious and rolls death saves as normal
+			</p>
+
+			<p>
+				Moving an unconscious friendly creature into the radius will have no effect
+			</p>
+
+			<p>
+				You can only have one banner active at a time. If you already have a banner spell active when you cast this spell, this banner will replace the old banner.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 Minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Banner of Freedom" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_BANNER_FREEDOM">
+		<supports>Paladin</supports>
+		<description>
+			<p>As you raise one of your free hands, a magical banner appears in it. The banner counts as a spear except it doesn't have the thrown property 
+				(You can use it as a weapon for melee attacks and it qualifies for every trait that a spear would qualify for).
+			</p>
+
+			<p>
+				In addition, for the duration, as long as you wield the banner, each friendly creature that starts their turn within 30 feet of you that can see the banner has their speed increased by 10 feet. 
+				The creature can also take the disengage action as a bonus action that turn.
+			</p>
+
+			<p>
+				Creatures within 30 feet of the banner that can see it also ignore difficult terrains
+			</p>
+
+			<p>
+				You can only have one banner active at a time. If you already have a banner spell active when you cast this spell, this banner will replace the old banner.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 Minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Chain of Light" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_CHAIN_LIGHT">
+		<supports>Paladin</supports>
+		<description>
+			<p>
+				A chain made of divine light appears from your hand and rushes to a creature you can see within range. The target must succeed on a dexterity saving throw, or be pulled 30 feet towards you. 
+				The target can willingly choose to fail the saving throw
+			</p>
+
+			<p>
+				<strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, the range of the spell and distance the target is pulled are increased by 10 feet for each spell level
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 Feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A link of a silver chain</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 	<element name="Malazar's Regenerating Ward" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_REGEN_WARD">
 		<supports>Artificer, Wizard, Cleric</supports>
@@ -480,6 +579,32 @@
 		</setters>
 	</element>
 
+	<element name="Noble Shield" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_NOBLE_SHIELD">
+		<supports>Paladin</supports>
+		<description>
+			<p>
+				Instead of rolling the saving throw of a spell, you choose to automatically fail it as you focus your power to create a 10 foot aura of protection around you to protect your allies.
+			</p>
+
+			<p>
+				Each friendly creature within the aura gains a resistance against all damage dealt by the spell or effect that you had to make a saving throw against.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 reaction (when you should make a saving throw against a spell or effect)</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (10 ft radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 	<element name="Snap Freeze" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_SNAPFREEZE">
 		<supports>Sorcerer, Wizard</supports>
 		<description>
