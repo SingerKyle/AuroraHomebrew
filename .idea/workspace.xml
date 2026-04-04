@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="579b22eb-1b37-466f-b4b6-dea6bae9977c" name="Changes" comment="" />
+    <list default="true" id="579b22eb-1b37-466f-b4b6-dea6bae9977c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoidTouched-Sorcerer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VoidTouched-Sorcerer.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +53,8 @@
       <workItem from="1772976315213" duration="19000" />
       <workItem from="1772976350021" duration="9000" />
       <workItem from="1775318983277" duration="764000" />
+      <workItem from="1775320150350" duration="140000" />
+      <workItem from="1775320477425" duration="10000" />
     </task>
     <servers />
   </component>
