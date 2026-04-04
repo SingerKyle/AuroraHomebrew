@@ -6,7 +6,7 @@
 		The following are spells, items and other such things for my homebrew campaign. The Wardens of Faerûn, enjoy team.
 		</description>
 		<author url="https://github.com/SingerKyle/AuroraHomebrew">Eonkyle</author>
-		<update version="0.0.20">
+		<update version="0.0.21">
 			<file name="Wardens.index" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Wardens.index" />
 		</update>
 	</info>
@@ -26,7 +26,7 @@
         <file name="Custom-Items-Tattoos.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Items-Tattoos.xml" />
         <file name="Custom-Feats.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Feats.xml" />
         
-        <file name="VoidTouched-Sorcerer.xml" url="" />
+        <file name="VoidTouched-Sorcerer.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/VoidTouched-Sorcerer.xml" />
         
         <file name="Custom-Deities.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Deities.xml" />
 	
