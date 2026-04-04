@@ -9,7 +9,7 @@
 		</update>
 	</info>
 
-	<element name="Void-Corrupted Bloodline" type="Archetype" source="Homebrew" id="ID_VOID_SORCERER_VOID_CORRUPTED">
+	<element name="Void-Corrupted Bloodline" type="Archetype" source="Wardens of Faerûn" id="ID_VOID_SORCERER_VOID_CORRUPTED">
 		<supports>Sorcerous Origin</supports>
 		<description>
 			<p>Your draconic heritage has been severed and devoured by the Void. What remains is something colder, deeper, and profoundly unnatural. The Weave recoils from you… but the Void answers.</p>
@@ -25,63 +25,78 @@
 		</rules>
 	</element>
 
-	<element name="Void-Corrupted Ancestry" type="Class Feature" source="Homebrew" id="ID_VOID_FEATURE_ANCESTRY">
+	<element name="Void-Corrupted Ancestry" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_ANCESTRY">
 		<description>
 			<p><strong>Level 1 – Void-Corrupted Ancestry</strong></p>
 			<p>You gain darkvision out to 120 feet.</p>
 			<p>You can speak, read, and write Draconic.</p>
-			<p><strong>Void Disdain:</strong> When interacting with dragons, you cannot benefit from proficiency bonuses on Charisma checks. Dragons instinctively recognise you as something wrong.</p>
+			<p><strong>Void Disdain:</strong> When interacting with dragons, you cannot benefit from proficiency bonuses on Charisma checks.</p>
 		</description>
+		<sheet>
+			<description>Darkvision 120 ft. You know Draconic. Disadvantage interacting with dragons (no proficiency bonus to CHA checks).</description>
+		</sheet>
 	</element>
 
-	<element name="Voidborn Resilience" type="Class Feature" source="Homebrew" id="ID_VOID_FEATURE_RESILIENCE">
+	<element name="Voidborn Resilience" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_RESILIENCE">
 		<description>
 			<p><strong>Level 1 – Voidborn Resilience</strong></p>
-			<p>Your hit point maximum increases by 1, and increases by 1 again whenever you gain a level in this class.</p>
+			<p>Your hit point maximum increases by 1 per sorcerer level.</p>
 			<p>When not wearing armour, your AC equals 13 + your Dexterity modifier.</p>
 		</description>
+		<sheet>
+			<description>+1 HP per sorcerer level. AC = 13 + DEX (no armour).</description>
+		</sheet>
 		<rules>
 			<stat name="hp" value="1" bonus="base" level="1"/>
 			<stat name="ac:calculation" value="13+dexterity:modifier" bonus="base"/>
 		</rules>
 	</element>
 
-	<element name="Eyes of the Void" type="Class Feature" source="Homebrew" id="ID_VOID_FEATURE_EYES">
+	<element name="Eyes of the Void" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_EYES">
 		<description>
 			<p><strong>Level 3 – Eyes of the Void</strong></p>
 			<p>You learn the <i>Darkness</i> spell; it does not count against your spells known.</p>
-			<p>You can cast <i>Darkness</i> by spending 2 sorcery points or using a spell slot.</p>
-			<p><strong>Void Sight (Limited):</strong> When you cast <i>Darkness</i> using sorcery points, you can see through it.</p>
-			<p>You can use this feature a number of times equal to your proficiency bonus per long rest.</p>
+			<p>You can cast it using sorcery points.</p>
+			<p>You can see through your Darkness a number of times equal to your proficiency bonus per long rest.</p>
 		</description>
+		<sheet>
+			<description>Learn Darkness. Can cast with sorcery points. Can see through it PB/LR.</description>
+		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS"/>
 		</rules>
 	</element>
 
-	<element name="Abyssal Chill" type="Class Feature" source="Homebrew" id="ID_VOID_FEATURE_ABYSSAL_CHILL">
+	<element name="Abyssal Chill" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_ABYSSAL_CHILL">
 		<description>
 			<p><strong>Level 6 – Abyssal Chill</strong></p>
-			<p>When you cast a spell that deals cold damage, add your Charisma modifier to one damage roll of that spell.</p>
-			<p>You can spend 1 sorcery point to gain resistance to cold damage for 1 hour.</p>
+			<p>Add CHA modifier to one cold damage roll of your spells.</p>
+			<p>Spend 1 sorcery point to gain resistance to cold damage for 1 hour.</p>
 		</description>
+		<sheet>
+			<description>Add CHA to cold spell damage. Spend 1 SP for cold resistance (1 hour).</description>
+		</sheet>
 	</element>
 
-	<element name="Inescapable Cold" type="Class Feature" source="Homebrew" id="ID_VOID_FEATURE_INESCAPABLE_COLD">
+	<element name="Inescapable Cold" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_INESCAPABLE_COLD">
 		<description>
 			<p><strong>Level 12 – Inescapable Cold</strong></p>
-			<p>Your cold damage ignores resistance to cold damage.</p>
-			<p>When you roll damage for a spell that deals cold damage, you can reroll a number of damage dice up to your Charisma modifier (minimum 1). You must use the new rolls.</p>
-			<p><strong>Shatter the Absolute (Limited):</strong> When you deal cold damage to a creature that is immune to cold damage, you can treat that immunity as resistance instead.</p>
-			<p>You can use this feature a number of times equal to your proficiency bonus per long rest.</p>
+			<p>Your cold damage ignores resistance.</p>
+			<p>Reroll damage dice up to CHA modifier.</p>
+			<p>You can treat immunity as resistance a number of times equal to your proficiency bonus per long rest.</p>
 		</description>
+		<sheet>
+			<description>Cold damage ignores resistance. Reroll damage (CHA mod dice). Break immunity → resistance PB/LR.</description>
+		</sheet>
 	</element>
 
-	<element name="Void Feature (Level 18)" type="Class Feature" source="Homebrew" id="ID_VOID_FEATURE_LEVEL18">
+	<element name="Void Feature (Level 18)" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_LEVEL18">
 		<description>
 			<p><strong>Level 18 – </strong></p>
-			<p></p>
 		</description>
+		<sheet>
+			<description></description>
+		</sheet>
 	</element>
 
 	<!--Feature Replacement Grants-->
