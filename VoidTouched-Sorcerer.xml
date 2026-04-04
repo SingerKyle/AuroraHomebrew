@@ -4,7 +4,7 @@
 		<name>Sorcerer</name>
 		<description>Sorcerer from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-sorcerer.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-sorcerer.xml" />
 		</update>
 	</info>
@@ -44,11 +44,13 @@
 			<p>When not wearing armour, your AC equals 13 + your Dexterity modifier.</p>
 		</description>
 		<sheet>
-			<description>+1 HP per sorcerer level. AC = 13 + DEX (no armour).</description>
+			<description>When you aren’t wearing armor, your AC equals {{ac:void resilience}}.</description>
 		</sheet>
 		<rules>
-			<stat name="hp" value="1" bonus="base" level="1"/>
-			<stat name="ac:calculation" value="13+dexterity:modifier" bonus="base"/>
+			<stat name="hp" value="level:sorcerer" />
+			<stat name="ac:void resilience" value="13" />
+			<stat name="ac:void resilience" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:void resilience" bonus="calculation" equipped="[armor:none]" alt="Voidborn Resilience" />
 		</rules>
 	</element>
 
@@ -60,7 +62,10 @@
 			<p>You can see through your Darkness a number of times equal to your proficiency bonus per long rest.</p>
 		</description>
 		<sheet>
-			<description>Learn Darkness. Can cast with sorcery points. Can see through it PB/LR.</description>
+			<description>
+				You learn the Darkness spell. You can cast it using sorcery points.
+				When you cast Darkness using sorcery points, you can see through it. Usable PB times per long rest.
+			</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS"/>
@@ -74,7 +79,10 @@
 			<p>Spend 1 sorcery point to gain resistance to cold damage for 1 hour.</p>
 		</description>
 		<sheet>
-			<description>Add CHA to cold spell damage. Spend 1 SP for cold resistance (1 hour).</description>
+			<description>
+				When you cast a spell that deals cold damage, add your Charisma modifier to one damage roll.
+				You can spend 1 sorcery point to gain resistance to cold damage for 1 hour.
+			</description>
 		</sheet>
 	</element>
 
