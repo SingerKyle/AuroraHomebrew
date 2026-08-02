@@ -98,13 +98,18 @@
 		</sheet>
 	</element>
 
-	<element name="Void Feature (Level 18)" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_LEVEL18">
+	<element name="Silver Dragon" type="Archetype Feature" source="Player’s Handbook" id="ID_VOID_FEATURE_PATRON">
+		<supports>Dragon Ancestor</supports>
 		<description>
-			<p><strong>Level 18 – </strong></p>
+			<p>You choose the silver dragon as your ancestor. The cold damage type is used by features you gain later.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>The silver dragon as your ancestor.</description>
 		</sheet>
+		<rules>
+			<!-- <stat inline="true" name="dragon ancestor" value="Silver Dragon" /> -->
+			<stat inline="true" name="dragon ancestor damage type" value="Cold" />
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->

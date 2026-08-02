@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.28">
+		<update version="0.0.29">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -138,6 +138,34 @@
 			<set name="materialComponent" />
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Corrupted Cure" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_CORRUPTED_CURE">
+		<supports>Paladin</supports>
+		<description>
+			<p>Aureon fades, reaching into the dwindling pool of radiant energy to provide healing to allies comes at a cost.</p>
+			<p>
+				Choose a creature that you can see within range. A surge of energy radiates over the creature causing them to gain a number 
+			of hit points equal to 1D6 + your spellcasting ability modifier.
+			The target must also make a constitution saving throw. On a failed save, it takes 1D4 necrotic damage, or gain 1D4 temporary hit points for 1 hour on a successful save.
+			</p>
+
+			<p><strong>At Higher Levels.</strong>When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1D6 and damage / temp healing by 1D4 for each slot above 1st level</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy </set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
 		</setters>
 	</element>
 
@@ -467,6 +495,32 @@
 		</setters>
 	</element>
 
+	<element name="Life Transference" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_LIFE_TRANSFERENCE">
+		<supports>Paladin</supports>
+		<description>
+			<p>
+				You sacrifice some of your health to mend another creature’s injuries. 
+				You take 3d8 necrotic damage, which can’t be reduced in any way, and one creature of your choice that you can see within range regains a number of hit points equal to twice the necrotic damage you take.
+			</p>
+			<p>
+				<strong>At Higher Levels:</strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
+			</p>
+		</description>
+		<setters>
+			<!--<set name="keywords"/>-->
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 	<!--
 	
 	                                                           LEVEL 3
