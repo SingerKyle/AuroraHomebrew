@@ -4,111 +4,166 @@
 		<name>Sorcerer</name>
 		<description>Sorcerer from the Player’s Handbook.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-sorcerer.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-sorcerer.xml" />
 		</update>
 	</info>
 
-	<element name="Void-Corrupted Bloodline" type="Archetype" source="Wardens of Faerûn" id="ID_VOID_SORCERER_VOID_CORRUPTED">
+	<!-- ================================================================
+     ARCHETYPE
+     ================================================================ -->
+	<element name="Voidweaver" type="Archetype" source="Wardens of Faerûn" id="ID_WOF_ARCHETYPE_SORCEROUS_ORIGIN_VOIDWEAVER">
 		<supports>Sorcerous Origin</supports>
 		<description>
-			<p>Your draconic heritage has been severed and devoured by the Void. What remains is something colder, deeper, and profoundly unnatural. The Weave recoils from you… but the Void answers.</p>
+			<p>Your magic doesn't come from blood or elements. Somewhere — a rift, a dying star, a bargain, a birth under the wrong sky — the emptiness between worlds looked back at you, and left something behind. You don't cast fire or frost. You cast absence: raw force that pulls matter apart and unmakes what it touches.</p>
+			<p>As a Voidweaver, you control the realm between realms and can manipulate its power to shape the very battlefield.</p>
+			<div element="ID_WOF_CLASS_FEATURE_VOIDWEAVER_UNMAKING" />
+			<div element="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOIDMANCY_SPELLS" />
+			<div element="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOID_MANIFESTATION" />
+			<div element="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOID_TOUCHED" />
+			<div element="ID_WOF_CLASS_FEATURE_VOIDWEAVER_MAW_OF_THE_VOID" />
 		</description>
-		<sheet display="false"/>
+		<sheet display="false" />
 		<rules>
-			<grant type="Class Feature" id="ID_VOID_FEATURE_ANCESTRY" level="1"/>
-			<grant type="Class Feature" id="ID_VOID_FEATURE_RESILIENCE" level="1"/>
-			<grant type="Class Feature" id="ID_VOID_FEATURE_EYES" level="1"/>
-			<grant type="Class Feature" id="ID_VOID_FEATURE_ABYSSAL_CHILL" level="6"/>
-			<grant type="Class Feature" id="ID_VOID_FEATURE_INESCAPABLE_COLD" level="14"/>
-			<grant type="Class Feature" id="ID_VOID_FEATURE_LEVEL18" level="18"/>
+			<grant type="Class Feature" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_UNMAKING" level="1" />
+			<grant type="Class Feature" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOIDMANCY_SPELLS" level="1" />
+			<grant type="Class Feature" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOID_MANIFESTATION" level="6" />
+			<grant type="Class Feature" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOID_TOUCHED" level="14" />
+			<grant type="Class Feature" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_MAW_OF_THE_VOID" level="18" />
 		</rules>
 	</element>
 
-	<element name="Void-Corrupted Ancestry" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_ANCESTRY">
+	<!-- ================================================================
+	     LEVEL 1 — UNMAKING
+	     ================================================================ -->
+	<element name="Unmaking" type="Class Feature" source="Wardens of Faerûn" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_UNMAKING">
 		<description>
-			<p><strong>Level 1 – Void-Corrupted Ancestry</strong></p>
-			<p>You gain darkvision out to 120 feet.</p>
-			<p>You can speak, read, and write Draconic.</p>
-			<p><strong>Void Disdain:</strong> When interacting with dragons, you cannot benefit from proficiency bonuses on Charisma checks.</p>
+			<p><strong>Level 1 – Unmaking</strong></p>
+			<p>
+				When you cast a sorcerer spell that deals damage, you can change the damage type of that spell to force. For a spell with an instantaneous duration, this costs one use no matter how many separate damage rolls the spell makes. 
+				For a spell with a longer duration, it costs one use for each round on which the spell deals damage. 
+				You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+			</p>
+			<p>
+				Additionally, when you damage a creature with a spell, you can spend 1 sorcery point to Unmake it further. The creature loses all temporary hit points and can't regain hit points until the start of your next turn.
+				This is separate from the use above and doesn't expend one.
+			</p>
 		</description>
-		<sheet>
-			<description>Darkvision 120 ft. You know Draconic. Disadvantage interacting with dragons (no proficiency bonus to CHA checks).</description>
+		<sheet action="Special">
+			<description>When you cast a sorcerer spell that deals damage, you can change its damage type to force. When you damage a creature with a spell, you can spend 1 sorcery point: the creature loses all temporary hit points and can't regain hit points until the start of your next turn.</description>
 		</sheet>
 	</element>
 
-	<element name="Voidborn Resilience" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_RESILIENCE">
+	<!-- ================================================================
+	     LEVEL 1 — VOIDMANCY SPELLS
+	     (Aberrant Mind-style expanded list: spells granted at sorcerer
+	     levels 1, 3, 5, 7 and 9. They do not count against spells known.)
+	     ================================================================ -->
+	<element name="Voidmancy Spells" type="Class Feature" source="Wardens of Faerûn" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOIDMANCY_SPELLS">
 		<description>
-			<p><strong>Level 1 – Voidborn Resilience</strong></p>
-			<p>Your hit point maximum increases by 1 per sorcerer level.</p>
-			<p>When not wearing armour, your AC equals 13 + your Dexterity modifier.</p>
+			<p><strong>Level 1 – Voidmancy Spells</strong></p>
+			<p>You learn additional spells when you reach certain levels in this class, as shown on the Voidmancy Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.</p>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1st</td><td>arms of Hadar, ray of sickness</td></tr>
+					<tr><td>3rd</td><td>misty step, vortex warp</td></tr>
+					<tr><td>5th</td><td>hunger of Hadar, pulse wave</td></tr>
+					<tr><td>7th</td><td>gravity sinkhole, summon aberration</td></tr>
+					<tr><td>9th</td><td>far step, telekinesis</td></tr>
+				</tbody>
+			</table>
 		</description>
 		<sheet>
-			<description>When you aren’t wearing armor, your AC equals {{ac:void resilience}}.</description>
+			<description>You learn additional void spells at sorcerer levels 1, 3, 5, 7 and 9. They count as sorcerer spells for you and don't count against your spells known.</description>
 		</sheet>
 		<rules>
-			<stat name="hp" value="level:sorcerer" />
-			<stat name="ac:void resilience" value="13" />
-			<stat name="ac:void resilience" value="dexterity:modifier" />
-			<stat name="ac:calculation" value="ac:void resilience" bonus="calculation" equipped="[armor:none]" alt="Voidborn Resilience" />
+			<!-- Level 1 (PHB — IDs should be correct out of the box) -->
+			<grant type="Spell" id="ID_PHB_SPELL_ARMS_OF_HADAR" level="1" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" level="1" spellcasting="Sorcerer" />
+
+			<!-- Level 3 -->
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="3" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_SCOC_SPELL_VORTEX_WARP" level="3" spellcasting="Sorcerer" />
+
+			<!-- Level 5 -->
+			<grant type="Spell" id="ID_PHB_SPELL_HUNGER_OF_HADAR" level="5" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_EGTW_SPELL_PULSE_WAVE" level="5" spellcasting="Sorcerer" />
+			<!-- "Void Siphon" has no official 5e printing I can match to an Aurora ID.
+			     Add the grant below once you know its source and ID, or cut the spell.
+			<grant type="Spell" id="ID_???_SPELL_VOID_SIPHON" level="5" spellcasting="Sorcerer" />
+			-->
+
+			<!-- Level 7 -->
+			<!-- VERIFY: gravity sinkhole is from Explorer's Guide to Wildemount. -->
+			<grant type="Spell" id="ID_EGTW_SPELL_GRAVITY_SINKHOLE" level="7" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ABERRATION" level="7" spellcasting="Sorcerer" />
+
+			<!-- Level 9 -->
+			<grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" level="9" spellcasting="Sorcerer" />
+			<grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" level="9" spellcasting="Sorcerer" />
 		</rules>
 	</element>
 
-	<element name="Eyes of the Void" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_EYES">
+	<!-- ================================================================
+	     LEVEL 6 — VOID MANIFESTATION
+	     ================================================================ -->
+	<element name="Void Manifestation" type="Class Feature" source="Wardens of Faerûn" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOID_MANIFESTATION">
 		<description>
-			<p><strong>Level 3 – Eyes of the Void</strong></p>
-			<p>You learn the <i>Darkness</i> spell; it does not count against your spells known.</p>
-			<p>You can cast it using sorcery points.</p>
-			<p>You can see through your Darkness a number of times equal to your proficiency bonus per long rest.</p>
+			<p><strong>Level 6 – Void Manifestation</strong></p>
+			<p>You can manifest an aspect of the void's dreadful power. As a bonus action, you can spend 3 sorcery points to transform for 10 minutes. You gain the following benefits while transformed:</p>
+			<ul>
+				<li>You gain temporary hit points equal to 1d10 + your sorcerer level.</li>
+				<li>Whenever a creature takes force damage from one of your spells, it must succeed on a Strength saving throw against your spell save DC or be moved 10 feet in any direction to a space you can see.</li>
+				<li>You have resistance to cold damage.</li>
+				<li>You are immune to the frightened condition.</li>
+			</ul>
 		</description>
-		<sheet>
-			<description>
-				You learn the Darkness spell. You can cast it using sorcery points.
-				When you cast Darkness using sorcery points, you can see through it. Usable PB times per long rest.
-			</description>
+		<sheet alt="Void Manifestation (3 SP)" action="Bonus Action" usage="3 Sorcery Points">
+			<description>You transform for 10 minutes. You gain {{void manifestation:temp hp}} temporary hit points, can move a creature 10 ft. in any direction whenever it takes force damage from you, have resistance to cold damage, and are immune to the frightened condition.</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DARKNESS"/>
+			<stat name="void manifestation:temp hp" value="1d10" />
+			<stat name="void manifestation:temp hp" value="level:sorcerer" bonus="level" />
 		</rules>
 	</element>
 
-	<element name="Abyssal Chill" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_ABYSSAL_CHILL">
+	<!-- ================================================================
+	     LEVEL 14 — VOID TOUCHED
+	     ================================================================ -->
+	<element name="Void Touched" type="Class Feature" source="Wardens of Faerûn" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_VOID_TOUCHED">
 		<description>
-			<p><strong>Level 6 – Abyssal Chill</strong></p>
-			<p>Add CHA modifier to one cold damage roll of your spells.</p>
-			<p>Spend 1 sorcery point to gain resistance to cold damage for 1 hour.</p>
+			<p><strong>Level 14 – Void Touched</strong></p>
+			<p>The void's power has a profound effect on your body and your magic. You no longer need to eat, drink, or breathe, and you have resistance to force damage.</p>
+			<p>When a creature is reduced to 0 hit points by your force damage, its body is Unmade: nothing remains, and it can't be restored to life by anything short of a <i>true resurrection</i> spell.</p>
+			<p>Once on each of your turns when this happens, you regain 1 sorcery point. You can regain sorcery points in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description>
-				When you cast a spell that deals cold damage, add your Charisma modifier to one damage roll.
-				You can spend 1 sorcery point to gain resistance to cold damage for 1 hour.
-			</description>
-		</sheet>
-	</element>
-
-	<element name="Inescapable Cold" type="Class Feature" source="Wardens of Faerûn" id="ID_VOID_FEATURE_INESCAPABLE_COLD">
-		<description>
-			<p><strong>Level 12 – Inescapable Cold</strong></p>
-			<p>Your cold damage ignores resistance.</p>
-			<p>Reroll damage dice up to CHA modifier.</p>
-			<p>You can treat immunity as resistance a number of times equal to your proficiency bonus per long rest.</p>
-		</description>
-		<sheet>
-			<description>Cold damage ignores resistance. Reroll damage (CHA mod dice). Break immunity → resistance PB/LR.</description>
-		</sheet>
-	</element>
-
-	<element name="Silver Dragon" type="Archetype Feature" source="Player’s Handbook" id="ID_VOID_FEATURE_PATRON">
-		<supports>Dragon Ancestor</supports>
-		<description>
-			<p>You choose the silver dragon as your ancestor. The cold damage type is used by features you gain later.</p>
-		</description>
-		<sheet>
-			<description>The silver dragon as your ancestor.</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You don't need to eat, drink, or breathe, and you have resistance to force damage. A creature reduced to 0 hit points by your force damage is Unmade and can't be restored short of true resurrection. Once on each of your turns when this happens, you regain 1 sorcery point.</description>
 		</sheet>
 		<rules>
-			<!-- <stat inline="true" name="dragon ancestor" value="Silver Dragon" /> -->
-			<stat inline="true" name="dragon ancestor damage type" value="Cold" />
+			<!-- VERIFY: internal damage resistance IDs exist in Aurora core; force should resolve. -->
+			<grant type="Damage Resistance" id="ID_INTERNAL_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
+	</element>
+
+	<!-- ================================================================
+	     LEVEL 18 — MAW OF THE VOID
+	     ================================================================ -->
+	<element name="Maw of the Void" type="Class Feature" source="Wardens of Faerûn" id="ID_WOF_CLASS_FEATURE_VOIDWEAVER_MAW_OF_THE_VOID">
+		<description>
+			<p><strong>Level 18 – Maw of the Void</strong></p>
+			<p>Your mastery over the void is complete, and you can rip open a gateway to the plane between planes. You can cast <i>ravenous void</i> without expending a spell slot. Once you do so, you can't cast it in this way again until you finish a long rest.</p>
+			<p>Any creature that dies to the effects of this spell is Unmade. When you cast it, you can choose a number of creatures equal to your proficiency bonus to be immune to the spell's gravitational effects, as you shield them from the void's influence.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast ravenous void without expending a spell slot. Creatures that die to it are Unmade. Choose up to {{proficiency}} creatures to be immune to its gravitational effects.</description>
+		</sheet>
+		<rules>
+			<!-- VERIFY: ravenous void is from Tasha's; ID depends on your TCoE file. -->
+			<grant type="Spell" id="ID_TCE_SPELL_RAVENOUS_VOID" level="18" spellcasting="Sorcerer" />
 		</rules>
 	</element>
 

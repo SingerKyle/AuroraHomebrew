@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Custom-Feats.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Custom-Feats.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Custom-Spells.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Custom-Spells.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoidTouched-Sorcerer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VoidTouched-Sorcerer.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,9 @@
       <workItem from="1775320150350" duration="140000" />
       <workItem from="1775320477425" duration="10000" />
       <workItem from="1775320989824" duration="690000" />
-      <workItem from="1785661361218" duration="1837000" />
+      <workItem from="1785661361218" duration="1962000" />
+      <workItem from="1788087054355" duration="846000" />
+      <workItem from="1789771574354" duration="2993000" />
     </task>
     <servers />
   </component>

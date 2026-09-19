@@ -4,7 +4,7 @@
 		<name>Homebrew Feats</name>
 		<description>Feats from the Wardens of Faerûn.</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/feats.xml" />
 		</update>
 	</info>
@@ -26,6 +26,111 @@
 		<sheet>
 		</sheet>
 		<prerequisite>"At least 17 Strength"</prerequisite>
+	</element>
+
+	<element name="Thesis Spell" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_THESIS_SPELL">
+		<description>
+			<p>You've spent a good portion of your time researching and perfecting a single spell. Designate a single spell of 3rd level or lower that you can cast as your thesis spell. You gain the following benefits:</p>
+			<ul>
+				<li><b>Refined Casting.</b> You can reroll an attack roll, or cause a creature to reroll a saving throw, made against your thesis spell after you have seen the result. Once you use this benefit, you must complete a long rest before you can use it again.</li>
+				<li><b>Practiced Recall.</b> If you have cast your thesis spell twice since your last long rest, you can cast it once more at its lowest level without expending a spell slot.</li>
+				<li><b>Familiar Work.</b> You always recognize a casting of your thesis spell, provided you have the sensory ability to perceive it.</li>
+			</ul>
+		</description>
+		<sheet>
+		</sheet>
+		<prerequisite>"The ability to cast at least one spell, alongside continued practice and study of the chosen spell"</prerequisite>
+	</element>
+
+	<element name="Standard Bearer" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_STAND_BEARER">
+		<description>
+			<p>You hold the honor of carrying the flag of your unit, regiment, or army. The flag inspires those who fight around it with the tales of its loyal warriors. The standard has an AC of 10 and 10 hit points, and can be carried upright in one hand. 
+				A creature can topple the standard, or right it again, as an action. You gain the following benefits:</p>
+			<ul>
+				<li><b>Rallying Colors.</b> While you or an ally is within 20 feet of the upright standard, that creature can reduce incoming damage by 1.</li>
+				<li><b>In Its Shadow.</b> While you are within 5 feet of the upright standard, you reduce incoming damage by 2 rather than 1.</li>
+				<li><b>Plant the Flag.</b> You can plant your standard in the ground as a bonus action. It remains upright until it is removed as an action or destroyed.</li>
+				<li><b>Guardian of the Standard.</b> Creatures can't damage or topple your standard while you are within 5 feet of it and not incapacitated.</li>
+			</ul>
+		</description>
+		<sheet>
+		</sheet>
+		<prerequisite>"Past or current affiliation with a notable militant faction"</prerequisite>
+	</element>
+
+	<element name="Shield Bearer" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_SHIELD_BEARER">
+		<description>
+			<p>Sometimes others can benefit from your skill with a shield more than you could. You gain the following benefits:</p>
+			<ul>
+				<li><b>Bulwark's Build.</b> Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li><b>Covering Guard.</b> You can choose to impose disadvantage on any opportunity attack made against a creature within 5 feet of you.</li>
+			</ul>
+		</description>
+		<sheet>
+		</sheet>
+	</element>
+
+	<element name="Field Medic" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_FIELD_MEDIC">
+		<description>
+			<p>You're an expert at saving people in the direst of circumstances. You gain the following benefits:</p>
+			<ul>
+				<li><b>Hold On.</b> An ally within 50 feet of you must fail an additional death saving throw to die.</li>
+				<li><b>Rush to Aid.</b> You can use a bonus action to move up to half your speed toward a dying creature. This movement doesn't provoke opportunity attacks.</li>
+				<li><b>Steady Hands.</b> You automatically succeed on the Wisdom (Medicine) check to stabilize a dying creature, even if you don't have a healer's kit.</li>
+			</ul>
+		</description>
+		<sheet>
+		</sheet>
+	</element>
+
+	<element name="Mustachioed" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_MUSTACHIOED">
+		<description>
+			<p>You have a beautiful mustache, which may be accompanied by an equally beautiful beard. Those incapable of growing facial hair may supplant it with their long and flowing head hair; in this case, all strokes are replaced with hair flipping. 
+				You gain the following benefits:</p>
+			<ul>
+				<li><b>Immaculate Grooming.</b> Your facial hair is immune to all damage and can't be removed from your face.</li>
+				<li><b>Fraternity of the Bristle.</b> You have advantage on Charisma (Persuasion) checks made in the best interests of another mustachioed creature's facial hair.</li>
+				<li><b>Introspective Stroke.</b> You can stroke your facial hair introspectively and gain a greater insight of the world around you.</li>
+				<li><b>Well Earned.</b> When you do something badass, you can stroke your facial hair using your next bonus action and gain 5 hit points. Sick burns, epic leaps, and clutch saves all qualify as badass.</li>
+			</ul>
+		</description>
+		<sheet>
+		</sheet>
+	</element>
+
+	<element name="Metamagician" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_METAMAGICIAN">
+		<description>
+			<p>You gain a deeper understanding of the functioning of metamagic. You gain the following benefits:</p>
+			<ul>
+				<li><b>Spark of Sorcery.</b> You gain 1 sorcery point. You can spend this sorcery point only on metamagic, unless you have another feature that allows you to spend sorcery points.</li>
+				<li><b>Borrowed Trick.</b> You learn one Metamagic option of your choice from the sorcerer class.</li>
+			</ul>
+		</description>
+		<sheet>
+		</sheet>
+		<prerequisite>"The ability to cast at least one spell"</prerequisite>
+	</element>
+
+	<element name="Marksman" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_MARKSMAN">
+		<description>
+			<p>You only need one bullet where others would need five. You gain the following benefits:</p>
+			<ul>
+				<li><b>Long Sight.</b> Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.</li>
+				<li><b>Precise Shot.</b> When you deal damage with a weapon that has the precise property, add your Dexterity modifier to each extra damage die gained from the precise property.</li>
+			</ul>
+		</description>
+		<sheet>
+		</sheet>
+	</element>
+
+	<element name="Metamagic Reservoir" type="Feat" source="Wardens of Faerûn" id="ID_WARDENS_META_RESERVOIR">
+		<description>
+			<p>Your metamagic pool increases in size, or you gain a metamagic pool if you did not have one.</p>
+			<p>You gain 2 sorcery points.</p>
+		</description>
+		<sheet>
+		</sheet>
+		<prerequisite>"The ability to cast at least one spell"</prerequisite>
 	</element>
 	
 </elements>

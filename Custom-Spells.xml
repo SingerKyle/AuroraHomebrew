@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.29">
+		<update version="0.0.30">
 			<file name="Custom-Spells.xml" url="https://raw.githubusercontent.com/SingerKyle/AuroraHomebrew/refs/heads/main/Custom-Spells.xml" />
 		</update>
 	</info>
@@ -117,8 +117,58 @@
 	                                                           LEVEL 1
 	
 	-->
+
+	<element name="Void Smite" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_VOID_SMITE">
+		<supports>Paladin</supports>
+		<description>
+			<p>The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon tears at the space around the target, and the attack deals an extra 2d6 force damage. The target must succeed on a Strength saving throw or be unable to take reactions until the end of its next turn.</p>
+
+			<p><strong>Toll.</strong> You take 1d4 psychic damage when the smite lands which ignores resistances or immunities and cannot be reduced or mitigated in any way</p>
+
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">void, force</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	
-	
+	<element name="Null" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_NULL">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You open a seam of nothing between yourself and the world, and pay for it out of your own reserves.</p>
+
+			<p>When you take damage, you expend one Hit Die and reduce the damage you take by 2d8 + your spellcasting ability modifier. You do not regain the expended Hit Die until you finish a long rest, even if you would otherwise recover Hit Dice on a short rest.</p>
+
+			<p>You can't regain any more hit points until the end of your next turn.</p>
+
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage reduction increases by 1d8 for each slot level above 1st. The Hit Die cost is unchanged.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when you take damage</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	
 	<element name="Magic Tool" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_MAGIC_TOOL">
 		<supports>Artificer, Wizard</supports>
@@ -556,6 +606,66 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>-->
+
+	<element name="Entropy Blast" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_ENTROPY_BLAST">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You create a sphere of raw entropy and hurl it to a point within range. Each creature within a 15-foot radius of that point must make a Strength saving throw as a blackened void tears through them, taking 7d6 force damage on a failed save, or half as much on a successful one.</p>
+
+			<p>a creature that fails its save has its ground movement speed halved until the end of its next turn</p>
+			
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd. 
+				The radius also increases by 5 feet for every two slot levels above 3rd, to a maximum radius of 25 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">void, force</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">80 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of mercury and a shard of obsidian</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ythol's Counter" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_YTHOLS_COUNTER">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You attempt to interrupt a creature in the process of casting a spell, and to seize the unravelling magic before it disperses.</p>
+
+			<p>If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level.
+				On a success, the creature's spell fails and has no effect.</p>
+
+			<p><strong>Redirecting.</strong> When you cast this spell, before making any check, you may declare that you are attempting to redirect the interrupted spell rather than unravel it. If you do, the Toll is doubled, whether or not you counter or redirect the spell successfully.</p>
+
+			<p>To redirect, the interrupted spell must require an attack roll or a saving throw, and you must succeed on an ability check using your spellcasting ability against a DC of 15 + the spell's level.
+				On a success, the spell takes effect as though cast by its original caster, but you choose a new target: a creature or point within 30 feet of you that you can see. All other aspects of the spell, including its save DC and attack bonus, are unchanged.
+				On a failure, the spell is countered if it would otherwise have been countered automatically; otherwise it takes effect as normal.</p>
+
+			<p><strong>Toll.</strong> You take 1d6 psychic damage for each level of the spell you attempted to counter, whether or not you countered or redirected it successfully. A cantrip deals 1d6 psychic damage. This damage ignores resistances or immunities and cannot be reduced or mitigated in any way</p>
+
+			<p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 	<element name="Bubble Barrier" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_BUBBLE_BARRIER">
 		<supports>Sorcerer, Wizard, Cleric, Artificer</supports>
@@ -1114,6 +1224,29 @@
 		</setters>
 	</element>
 
+	<element name="Void Imbuement" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_VOID_IMBUEMENT">
+		<supports>Bard, Sorcerer</supports>
+		<description>
+			<p>You coat a willing creature in void-like energy that borrows latent power from the void, bolstering the target's kinetic and potential energy.</p>
+
+			<p>For the duration, the target gains resistance to force damage, its speed increases by 10 feet, its jump distance is doubled, and at the start of each of its turns it gains temporary hit points equal to twice your spellcasting ability modifier.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blackened silver worth 50 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 	<!--
 	
 	                                                           LEVEL 6
@@ -1127,7 +1260,36 @@
 	                                                           LEVEL 7
 	
 	-->
-	
-	
+
+	<element name="Void Amplification" type="Spell" source="Wardens of Faerûn" id="ID_AH_WOF_SPELL_VOID_AMPLIFICATION">
+		<supports>Bard, Sorcerer</supports>
+		<description>
+			<p>When a creature you can see within range, including yourself, casts a spell that deals damage, you draw upon the potential energy of your magic and your body to amplify that spell with dangerous efficacy.</p>
+
+			<p>You take necrotic damage equal to a number of d8s equal to your total level. This damage ignores resistance and immunity and can't be reduced or mitigated in any way. In addition, you gain levels of exhaustion based on the level of the amplified spell:</p>
+			<ul>
+				<li>3rd level: 1 level of exhaustion.</li>
+				<li>5th or 6th level: 2 levels of exhaustion.</li>
+				<li>7th or 8th level: 3 levels of exhaustion.</li>
+				<li>9th level: 4 levels of exhaustion.</li>
+			</ul>
+
+			<p>The amplified spell's damage is maximized instead of rolled, creatures have disadvantage on saving throws made to resist it, its caster has advantage on the spell's attack roll if it has one, and the damage it deals ignores resistance and immunity.</p>
+		</description>
+		<setters>
+			<set name="keywords">void</set>
+			<set name="level">7</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 reaction, which you take when a creature you can see within range casts a spell that deals damage</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crystal vial filled with a mixture of your blood and crushed diamond worth 450 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 	
 </elements>
