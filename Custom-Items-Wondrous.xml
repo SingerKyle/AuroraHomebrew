@@ -7,7 +7,7 @@
 			
 		</description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
-		<update version="0.0.25">
+		<update version="0.0.26">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/dungeon-masters-guide/items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -17,6 +17,39 @@
 			<p>
 				A holy symbol etched into the form of a monocle to be worn by only the most stylish of Clerics and Paladins.
 			</p>
+		</description>
+		<setters>
+			<set name="category">Spellcasting Focus</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="0">—</set>
+			<set name="container">Holy Symbol</set>
+			<set name="slot">onehand</set>
+		</setters>
+	</element>
+
+	<element name="Engraved Monocle" type="Item" source="Wardens of Faerûn" id="ID_CUSTOM_MONOCLE_Echosight">
+		<description>
+			<p>
+				While viewing through the monocle you can utilize the following features:
+			</p>
+
+			<p>
+				Keen Eye. You gain advantage on Intelligence (investigation) checks to detect forgeries, and the value of gems and precious metals.
+			</p>
+
+			<p>
+				<strong>Echosight.</strong> When you peer through the monocle you can see echoes of the past that relate to a question you have regarding an object or your immediate surroundings.
+				After observing the object or location for 10 minutes a spectral echo of a specific moment in time, relating to your question, begins to play out before you. This incorporeal echo overlays a 20 foot cube around the object or location and is an exact visual recreation of past events. You are free to move about the area as the event unfolds but are unable to interact with the echo. This echo lasts for 1 minute or until you remove the monocle, or leave the 20 foot cube. The DM will describe the scene in detail but the answer to your question may need to be puzzled out from the available visual clues.
+
+				For example, you could ask, “who killed this creature?”, and the vision will show the minute the incident occured but you may still not recognize the killer.
+
+				If a question can’t be directly answered with a past event, the monocle will show a cryptic or vague echo relating to the object or location.
+
+				For example, if you ask “What is the meaning of life?, the monocle may just show an echo of a loving couple or happy child that was near the object or location at some point in the past.
+
+				Once you have used this feature you can’t use it again until the next dawn.
+			</p>
+			
 		</description>
 		<setters>
 			<set name="category">Spellcasting Focus</set>
